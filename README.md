@@ -1,0 +1,2 @@
+# WinApps Scoop bucket
+
