@@ -10,13 +10,12 @@
       }
     },
     "checkver": {
-      "url": "https://github.com/chenhb23/lanzouyun-disk/releases/latest",
-      "regex": "v(\\d+(?:\\.\\d+)*)"
+      "github": "https://github.com/chenhb23/lanzouyun-disk"
     },
     "autoupdate": {
       "architecture": {
         "64bit": {
-          "url": "https://github.com/chenhb23/lanzouyun-disk/releases/download/v{version}/lanzouyun-{version}-x64-win.zip"
+          "url": "https://github.com/chenhb23/lanzouyun-disk/releases/download/v$version/lanzouyun-$version-x64-win.zip"
         }
       }
     }
