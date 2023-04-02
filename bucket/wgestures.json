@@ -23,6 +23,5 @@
     },
     "autoupdate": {
       "url": "https://github.com/yingDev/WGestures/releases/download/$version/$version.zip"
-      
     }
   }
