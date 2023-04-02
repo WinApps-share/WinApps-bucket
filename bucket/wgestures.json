@@ -8,7 +8,8 @@
     "installer": {
         "script": [
           "Expand-MsiArchive \"$dir\\Install WGestures.msi\" \"$dir\" -Removal",
-          "Move-Item \"$dir\\WGestures\\*\" \"$dir\""
+          "Move-Item \"$dir\\WGestures\\*\" \"$dir\"",
+          "Remove-Item \"$dir\\WGestures\" -Recurse"
         ]
       },
     "shortcuts": [
