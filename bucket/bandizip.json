@@ -35,6 +35,9 @@
         "regex": "v([\\d.]+)</font"
     },
     "autoupdate": {
-        "url": "https://dl.bandisoft.com/bandizip.std/BANDIZIP-PORTABLE.ZIP"
+        "url": "https://dl.bandisoft.com/bandizip.std/BANDIZIP-PORTABLE.ZIP",
+        "hash": {
+            "mode": "download"
+        }
     }
 }
