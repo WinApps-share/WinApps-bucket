@@ -22,10 +22,7 @@
       "github": "https://github.com/yingDev/WGestures"
     },
     "autoupdate": {
-      "architecture": {
-        "64bit": {
-          "url": "https://github.com/yingDev/WGestures/releases/download/$version/$version.zip"
-        }
-      }
+      "url": "https://github.com/yingDev/WGestures/releases/download/$version/$version.zip"
+      
     }
   }
