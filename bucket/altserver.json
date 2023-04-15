@@ -20,7 +20,7 @@
             "AltServer"
         ]
     ],
-    "chekver": {
+    "checkver": {
         "url": "https://faq.altstore.io/release-notes/altserver",
         "regex": "AltServer\\s(\\d+(\\.\\d+)?)"
     },
