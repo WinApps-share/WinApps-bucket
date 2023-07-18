@@ -5,12 +5,12 @@
     "license": "LGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://dotsrc.dl.osdn.net/osdn/peazip/78913/peazip_portable-9.3.0.WIN64.zip",
+            "url": "https://github.com/peazip/PeaZip/releases/download/9.3.0/peazip_portable-9.3.0.WIN64.zip",
             "hash": "7216a157f4521235a29ee91213cb9411a17c6c7a59cde037767b67bcf69289a7",
             "extract_dir": "peazip_portable-9.3.0.WIN64"
         },
         "32bit": {
-            "url": "https://dotsrc.dl.osdn.net/osdn/peazip/78913/peazip_portable-9.3.0.WINDOWS.zip",
+            "url": "https://github.com/peazip/PeaZip/releases/download/9.3.0/peazip_portable-9.3.0.WINDOWS.zip",
             "hash": "eb5e778b9b6e2373e1fc52b27bb66dec894069ebd9666e70a24c0ca4855b2e49",
             "extract_dir": "peazip_portable-9.3.0.WINDOWS"
         }
@@ -37,23 +37,18 @@
         "res\\custedit.txt"
     ],
     "checkver": {
-        "url": "https://osdn.net/projects/peazip/",
-        "regex": "<a href=\"/projects/peazip/releases/(?<release>[\\d]*)\">peazip ([\\d.]+)</a>"
+        "github": "https://github.com/peazip/PeaZip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://dotsrc.dl.osdn.net/osdn/peazip/$matchRelease/peazip_portable-$version.WIN64.zip",
+                "url": "https://github.com/peazip/PeaZip/releases/download/$version/peazip_portable-$version.WIN64.zip",
                 "extract_dir": "peazip_portable-$version.WIN64"
             },
             "32bit": {
-                "url": "https://dotsrc.dl.osdn.net/osdn/peazip/$matchRelease/peazip_portable-$version.WINDOWS.zip",
+                "url": "https://github.com/peazip/PeaZip/releases/download/$version/peazip_portable-$version.WINDOWS.zip",
                 "extract_dir": "peazip_portable-$version.WINDOWS"
             }
-        },
-        "hash": {
-            "url": "https://osdn.net/projects/peazip/downloads/$matchRelease/$basename",
-            "regex": "(?sm)SHA256.*?$sha256"
         }
     }
 }
