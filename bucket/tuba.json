@@ -1,9 +1,9 @@
 {
-    "version": "2022.11",
+    "version": "2023.05",
     "homepage": "http://www.tbtool.cn/",
     "description": "图吧工具箱",
-    "url": "https://download.tualatin.club/%E5%9B%BE%E5%90%A7%E5%B7%A5%E5%85%B7%E7%AE%B12022.11%E7%BB%BF%E8%89%B2%E7%89%88%E8%87%AA%E5%8A%A8%E8%A7%A3%E5%8E%8B%E7%A8%8B%E5%BA%8FR2.exe#/TuBaTool.7z",
-    "hash": "ef7f7bca952911a35a2fbfe9c5a9b972623af8417da5da208f308f19d956fd5d",
+    "url": "https://download.tualatin.club/%E5%9B%BE%E5%90%A7%E5%B7%A5%E5%85%B7%E7%AE%B12023.05%E7%BB%BF%E8%89%B2%E7%89%88%E8%87%AA%E5%8A%A8%E8%A7%A3%E5%8E%8B%E7%A8%8B%E5%BA%8FR3.exe#/TuBaTool.7z",
+    "hash": "c6da66c322fcb590ee4c76e7e5a84cdc81075f4ce8f26741943e262f43b70aad",
     "license": "MIT",
     "shortcuts": [
         [
@@ -12,10 +12,11 @@
         ]
     ],
     "checkver": {
-        "url": "http://www.tbtool.cn/version.html",
-        "regex": "(\\d{4}\\.\\d{2})"
+        "url": "http://www.tbtool.cn",
+        "regex": "(\\d{4}\\.\\d{2})\\S+([a-zA-Z]\\d)+",
+        "replace": "${1}"
     },
     "autoupdate": {
-        "url": "https://download.tualatin.club/%E5%9B%BE%E5%90%A7%E5%B7%A5%E5%85%B7%E7%AE%B1$version%E7%BB%BF%E8%89%B2%E7%89%88%E8%87%AA%E5%8A%A8%E8%A7%A3%E5%8E%8B%E7%A8%8B%E5%BA%8FR2.exe#/TuBaTool.7z"
+        "url": "https://download.tualatin.club/%E5%9B%BE%E5%90%A7%E5%B7%A5%E5%85%B7%E7%AE%B1$match1%E7%BB%BF%E8%89%B2%E7%89%88%E8%87%AA%E5%8A%A8%E8%A7%A3%E5%8E%8B%E7%A8%8B%E5%BA%8F$match2.exe#/TuBaTool.7z"
     }
 }
