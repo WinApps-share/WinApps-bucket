@@ -1,16 +1,16 @@
 {
-    "version": "5.5.0.1488",
+    "version": "5.5.1.1508",
     "description": "Utility for data recovery, disk partition management, backup & restore",
     "homepage": "https://www.diskgenius.cn",
     "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "https://download2.eassos.cn/DG5501488_x64.zip",
-            "hash": "8b85b49ef6765b20d812b09ac91bb8f81645ce744e25583fd32fac647db36b3b"
+            "url": "https://download2.eassos.cn/DG5511508_x64.zip",
+            "hash": "8c306aa776d8d13dcb264bcc304c5956bd199851387b282414b769b90bd456f1"
         },
         "32bit": {
-            "url": "https://download2.eassos.cn/DG5501488_x86.zip",
-            "hash": "3ef277ad99a049133f09c52bbc346dcc0d9cb8374c00e3e20d00ce435e08ef26"
+            "url": "https://download2.eassos.cn/DG5511508_x86.zip",
+            "hash": "c49ccd0db52e1b50557d384509e06c14df4d42ba457c0642a590c8956408b9ad"
         }
     },
     "extract_dir": "DiskGenius",
