@@ -5,7 +5,7 @@
     "homepage": "https://www.apple.com/itunes/",
     "architecture": {
         "64bit": {
-            "url": "http://www.apple.com/itunes/download/win64#/dl.7z",
+            "url": "https://www.apple.com/itunes/download/win64#/dl.7z",
             "hash": "sha1:3883de0be7f68918daf36855faa30786883f54f9"
         },
         "32bit": {
@@ -82,10 +82,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.apple.com/itunes/download/win64#/dl.7z"
+                "url": "https://www.apple.com/itunes/download/win64#/dl.7z"
             },
             "32bit": {
-                "url": "http://www.apple.com/itunes/download/win32#/dl.7z"
+                "url": "https://www.apple.com/itunes/download/win32#/dl.7z"
             }
         }
     }
