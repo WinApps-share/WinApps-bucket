@@ -1,5 +1,5 @@
 {
-    "version": "29.1.3",
+    "version": "30.0",
     "description": "Video recording and live streaming software",
     "homepage": "https://obsproject.com",
     "license": "GPL-2.0-only",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-29.1.3-Full-Installer-x64.exe#dl.7z",
-            "hash": "f5d429b2f75e85a7fb3e8dc84613fa362ab10276e4679b19f57dcae86569536b",
+            "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-30.0-Full-Installer-x64.exe#dl.7z",
+            "hash": "30d21538670f22a34d9bd891c599033ac46c2df7e7302d3311913be5ce210e6e",
             "shortcuts": [
                 [
                     "bin\\64bit\\obs64.exe",
