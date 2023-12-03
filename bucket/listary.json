@@ -13,8 +13,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.listary.com/download",
-        "regex": "<h2>([\\d.]+) \\([\\d/]+\\)</h2>"
+        "url": "https://help.listary.com/changelog",
+        "regex": "<h3[^>]* id=\"\\d+\">([\\d.]+)<a"
     },
     "autoupdate": {
         "url": "https://www.listary.com/download/Listary.exe?version=$version#/dl.exe"
