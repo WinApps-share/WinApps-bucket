@@ -1,5 +1,5 @@
 {
-    "version": "231102",
+    "version": "231220",
     "description": "Highly customizable media player",
     "homepage": "https://potplayer.daum.net",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/231102/PotPlayerSetup64.exe#/dl.7z",
-            "hash": "f8c4c4ba7a9f10654bab4d2632a8a8363559c0fae3bf09fcf013f0df06c4f7a6",
+            "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/231220/PotPlayerSetup64.exe#/dl.7z",
+            "hash": "c75ec3107e7d7a1ca333785532cf8ff30417638ab0080876b5d309ff3d1f36e6",
             "shortcuts": [
                 [
                     "PotPlayer64.exe",
@@ -22,8 +22,8 @@
             ]
         },
         "32bit": {
-            "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/231102/PotPlayerSetup.exe#/dl.7z",
-            "hash": "dd0530dfed1a9a61db14541d7c181507daacf3c8b8b6975d8dfc187c3bcb61f7",
+            "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/231220/PotPlayerSetup.exe#/dl.7z",
+            "hash": "13c66a2ebe7743c402c078fb22b67238b8c7c5535e112522b25fe32e13f9328d",
             "shortcuts": [
                 [
                     "PotPlayer.exe",
