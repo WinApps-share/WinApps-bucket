@@ -19,6 +19,7 @@
             "hash": ""
         }
     },
+    "extract_dir": "",
     "pre_install": "",
     "installer": {
         "script": ""
@@ -31,6 +32,12 @@
         "script": ""
     },
     "bin": "",
+    "shortcuts": [
+        [
+            "xxx.exe",
+            "XXX"
+        ]
+    ],
     "env_add_path": [
         "",
         ""
