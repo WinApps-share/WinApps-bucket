@@ -6,7 +6,6 @@
   <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FWinApps-share%2FWinApps-bucket"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FWinApps-share%2FWinApps-bucket&countColor=%230779b9&style=flat" /></a>
  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/WinApps-share/WinApps-bucket?style=flat">
 
-  
 </div>
 
 <br />
@@ -25,7 +24,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ### 添加 Scoop bucket
 
 ```powershell
-scoop bucket add winapps https://github.com/WinApps/scoop-bucket.git
+scoop bucket add winapps https://github.com/WinApps-share/WinApps-bucket.git
 ```
 
 ### 安装软件
