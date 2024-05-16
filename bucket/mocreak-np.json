@@ -1,0 +1,26 @@
+{
+    "version": "2.2.0.301",
+    "description": "Office 部署工具",
+    "homepage": "https://github.com/OdysseusYuan/Mocreak",
+    "license": "Free",
+    "url": "https://github.com/OdysseusYuan/Mocreak/releases/download/v2.2.0/Mocreak_Installer_v2.2.0.301.exe",
+    "hash": "cf8077b5b5df7d247c06af58b4bd0f416b26752696366d6f62281ed4f49b9d1e",
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "Mocreak.exe",
+            "Mocreak"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.mocreak.com/download.html",
+        "regex": "v([\\d.]+).exe"
+    },
+    "autoupdate": {
+        "url": "https://github.com/OdysseusYuan/Mocreak/releases/download/v$matchHead/Mocreak_Installer_v$version.exe",
+        "hash": {
+            "url": "https://github.com/OdysseusYuan/Mocreak/releases/latest",
+            "regex": "SHA256:$sha256"
+        }
+    }
+}
