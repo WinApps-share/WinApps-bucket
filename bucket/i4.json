@@ -1,16 +1,16 @@
 {
-    "version": "8.21",
+    "version": "8.22",
     "description": "爱思助手",
     "homepage": "https://www.i4.cn/pro_pc.html",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://d-app6.i4.cn/i4tools/V8/8.21/i4Tools8_v8.21_Setup_x64.exe#/dl.7z",
-            "hash": "629663ef4fc812fd58ae6ec987df42e3477d94c6aebb77c5b088e11aa80ad37a"
+            "url": "https://d-app6.i4.cn/i4tools/V8/8.22/i4Tools8_v8.22_Setup_x64.exe#/dl.7z",
+            "hash": "9066b666f42e44a3265c4bbd8427f681aa4fcdb8f4bada9d6615cc16daab4ef3"
         },
         "32bit": {
-            "url": "https://d-app6.i4.cn/i4tools/V8/8.21/i4Tools8_v8.21_Setup_x86.exe#/dl.7z",
-            "hash": "72dcd71f88dffda81d6c92b70730cf28a9a67036b14fec769a755afa533aee99"
+            "url": "https://d-app6.i4.cn/i4tools/V8/8.22/i4Tools8_v8.22_Setup_x86.exe#/dl.7z",
+            "hash": "d97c891de5e638bca71d1d905db58c65618fd8eebfbb0739c003b5d81f2ddb6e"
         }
     },
     "bin": "i4Tools.exe",
