@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "http://static.centbrowser.com/win_stable/5.1.1130.122/centbrowser_5.1.1130.122_x64_portable.exe#/dl.7z",
-            "hash": "14a034e772d575b94cea88f889ce54ff7a3c10ec5891cb0efa13df7eadea95c7"
+            "hash": "abbb3adb3212b1a53c182eab980049d0d7c0e7e5d1ea01dafcac7fbead3aea34"
         },
         "32bit": {
             "url": "http://static.centbrowser.com/win_stable/5.1.1130.122/centbrowser_5.1.1130.122_portable.exe#/dl.7z",
