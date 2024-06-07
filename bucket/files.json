@@ -1,0 +1,26 @@
+{
+    "version": "3.4.1",
+    "homepage": "https://files.community/",
+    "description": "A modern file explorer that pushes the boundaries of the Windows platform.",
+    "license": "MIT",
+    "url": "https://cdn.files.community/files/stable/Files.Package.appinstaller#/files.appinstaller",
+    "hash": "396FF6954BCB7822CA9A257B30627138504128604A8194E582F762E9050694F8",
+    "pre_install": [
+        "$WindowsVersion=[Environment]::OSVersion.Version",
+        "if (($WindowsVersion.Major -ne '10') -and ($WindowsVersion.Build -lt '18362')) {",
+        " Throw 'This Package requires at least Windows 10 Build 18362 or newer.'",
+        "  }",
+        "Add-AppxPackage -AppInstallerFile \"$dir\\files.appinstaller\"",
+        "Remove-Item \"$dir\\files.appinstaller\""
+    ],
+    "pre_uninstall": [
+        "Get-AppxPackage -Name Files | Remove-AppxPackage -Confirm:$false"
+    ],
+    "checkver": {
+        "url": "https://github.com/files-community/Files/releases/latest",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://cdn.files.community/files/download/Files.Stable.exe"
+    }
+}
