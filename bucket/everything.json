@@ -15,6 +15,10 @@
         "32bit": {
             "url": "https://www.voidtools.com/Everything-1.4.1.1024.x86.zip",
             "hash": "febbdf9ffefd122e046163d23b3ce995b35bbee05964886d1db8c81b7fb5c34f"
+        },
+        "arm64": {
+            "url": "https://www.voidtools.com/Everything-1.4.1.1024.ARM64.zip",
+            "hash": "B3CE6DF443270266B067C90E5C66B619372BC618C27D7B0AA57B0E19A8440F89"
         }
     },
     "pre_install": [
@@ -63,6 +67,9 @@
             },
             "32bit": {
                 "url": "https://www.voidtools.com/Everything-$version.x86.zip"
+            },
+            "arm64": {
+                "url": "https://www.voidtools.com/Everything-$version.ARM64.zip"
             }
         },
         "hash": {
