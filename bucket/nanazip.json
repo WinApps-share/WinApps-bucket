@@ -3,20 +3,45 @@
     "description": "The 7-Zip derivative intended for the modern Windows experience",
     "homepage": "https://github.com/M2Team/NanaZip",
     "license": "MIT",
-    "url": "https://github.com/M2Team/NanaZip/releases/download/3.0.1000.0/NanaZip_3.0.1000.0.msixbundle",
-    "hash": "27d4ead5f9af51e573145ce1cca78f063606ab8ae8f7124801d4d887453f5397",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/M2Team/NanaZip/releases/download/3.0.1000.0/NanaZip_3.0.1000.0.msixbundle",
+            "hash": "27d4ead5f9af51e573145ce1cca78f063606ab8ae8f7124801d4d887453f5397"
+        },
+        "arm64": {
+            "url": "https://github.com/M2Team/NanaZip/releases/download/3.0.1000.0/NanaZip_3.0.1000.0.msixbundle",
+            "hash": "27d4ead5f9af51e573145ce1cca78f063606ab8ae8f7124801d4d887453f5397"
+        }
+    },
+    "pre_install": [
+        "$WindowsVersion=[Environment]::OSVersion.Version",
+        "if (($WindowsVersion.Major -ne '10') -and ($WindowsVersion.Build -lt '19041')) {",
+        " Throw 'This Package requires at least Windows 10 Build 19041 or newer.'",
+        "  }"
+    ],
     "installer": {
         "script": "Add-AppxPackage -DeferRegistrationWhenPackagesAreInUse -ForceUpdateFromAnyVersion -Path \"$dir\\*.msixbundle\""
     },
     "uninstaller": {
-        "script": "Get-AppxPackage -Name 40174MouriNaruto.NanaZip | Remove-AppxPackage -Confirm:$false"
+        "script": "Get-AppxPackage -Name 40174MouriNaruto.NanaZip | Remove-AppxPackage -Confirm:$false -PreserveApplicationData:$false"
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/M2Team/NanaZip/releases/download/$version/NanaZip_$version.msixbundle",
-        "hash": {
-            "url": "https://github.com/M2Team/NanaZip/releases/tag/$version",
-            "regex": "(?s)$basename.*?$sha256"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/M2Team/NanaZip/releases/download/$version/NanaZip_$version.msixbundle",
+                "hash": {
+                    "url": "https://github.com/M2Team/NanaZip/releases/tag/$version",
+                    "regex": "(?s)$basename.*?$sha256"
+                }
+            },
+            "arm64": {
+                "url": "https://github.com/M2Team/NanaZip/releases/download/$version/NanaZip_$version.msixbundle",
+                "hash": {
+                    "url": "https://github.com/M2Team/NanaZip/releases/tag/$version",
+                    "regex": "(?s)$basename.*?$sha256"
+                }
+            }
         }
     }
 }
