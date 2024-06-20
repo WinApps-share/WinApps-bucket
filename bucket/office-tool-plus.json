@@ -1,10 +1,10 @@
 {
-    "version": "10.11.5.0",
+    "version": "10.12.7.0",
     "description": "A powerful and useful tool for Office deployments",
     "homepage": "https://otp.landian.vip/",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/YerongAI/Office-Tool/releases/download/v10.11.5.0/Office_Tool_with_runtime_v10.11.5.0_x64.7z",
-    "hash": "c02ea725c2ca6a7bf9f24337f53dcfdbeba4482de04cf671cd53dd5ebefc447d",
+    "url": "https://github.com/YerongAI/Office-Tool/releases/download/v10.12.7.0/Office_Tool_with_runtime_v10.12.7.0_x64.7z",
+    "hash": "e5660055576a44a00bd0d010c44cd68b202eb13e533e23280c1eaa3b8ea1cbcd",
     "extract_dir": "Office Tool",
     "shortcuts": [
         [
