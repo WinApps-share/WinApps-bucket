@@ -1,10 +1,10 @@
 {
-    "version": "1.2406.2.0",
+    "version": "1.2406.3.0",
     "description": "一款哔哩哔哩第三方桌面应用，适用于 Windows 11",
     "homepage": "https://github.com/Richasy/Bili.Copilot",
     "license": "GPL-3.0",
-    "url": "https://github.com/Richasy/Bili.Copilot/releases/download/v1.2406.2.0/Bili.Copilot_1.2406.2.0_x64.zip",
-    "hash": "5a9cc2bee648aff0a56e6043fd459ad53ab9337dd0c8355f33c2e3d23d9193bd",
+    "url": "https://github.com/Richasy/Bili.Copilot/releases/download/v1.2406.3.0/Bili.Copilot_1.2406.3.0_x64.zip",
+    "hash": "ebc39adbad13209349cdc3de5feaf79eab4759d9cf5b0d94df04db259a2cd945",
     "pre_install": [
         "if ([Environment]::OSVersion.Version.Major -lt \"10\" -or [System.Environment]::OSVersion.Version.Build -lt 22000) {",
         "    throw \"Bili.Copilot requires Windows 11 or later to work.\"",
