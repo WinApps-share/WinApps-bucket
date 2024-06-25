@@ -1,16 +1,16 @@
 {
     "homepage": "https://www.centbrowser.com/",
     "description": "The Most Feature Rich Chromium",
-    "version": "5.1.1130.123",
+    "version": "5.1.1130.128",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "http://static.centbrowser.com/win_stable/5.1.1130.123/centbrowser_5.1.1130.123_x64.exe#/dl.7z",
-            "hash": "577b9c1ae15a0115dfbbf66a14d098316759f2cb09f7bb5060fc02af53ee5050"
+            "url": "http://static.centbrowser.com/win_stable/5.1.1130.128/centbrowser_5.1.1130.128_x64.exe#/dl.7z",
+            "hash": "785c3d86a5bddc48903d9c8dc27e8abe5affaccdde2accde3a38110e36d4a3f5"
         },
         "32bit": {
-            "url": "http://static.centbrowser.com/win_stable/5.1.1130.123/centbrowser_5.1.1130.123.exe#/dl.7z",
-            "hash": "801527a2532306ef758f443cf49eab20cb9999e7745bc903c63a2f9515e31599"
+            "url": "http://static.centbrowser.com/win_stable/5.1.1130.128/centbrowser_5.1.1130.128.exe#/dl.7z",
+            "hash": "82e6245740c7250af7465c551bede1907ec293e021bfd2956d032fa077e84929"
         }
     },
     "installer": {
