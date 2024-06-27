@@ -1,0 +1,24 @@
+{
+    "version": "3.3.24.607",
+    "description": "硬件狗狗，硬件信息检测跑分",
+    "homepage": "https://yjgg.mydrivers.com/",
+    "license": "Freeware",
+    "url": "https://file6.mydrivers.com/soft/HDDogSetup3.3.24.607.exe#/dl.7z",
+    "hash": "f2060965c783a5c5928b0d8522e0c8365ce95107ba3667cb39cd7e36b15198f5",
+    "installer": {
+        "script": "Expand-7zipArchive \"$dir\\app.7z\" \"$dir\" -Removal | Out-Null"
+    },
+    "shortcuts": [
+        [
+            "HDDog.exe",
+            "硬件狗狗"
+        ]
+    ],
+    "checkver": {
+        "url": "https://yjgg.mydrivers.com",
+        "regex": "Windows版\\S\\s([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://file6.mydrivers.com/soft/HDDogSetup$version.exe#/dl.7z"
+    }
+}
