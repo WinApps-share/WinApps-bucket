@@ -1,20 +1,20 @@
 {
-    "version": "1.6.6",
+    "version": "1.7.0",
     "description": "clash 客户端",
     "homepage": "https://github.com/clash-verge-rev/clash-verge-rev",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.6.6/Clash.Verge_1.6.6_x64_portable.zip",
-            "hash": "3AFECAA0A49A6A964473C92B79E279729B09F970782A816EC8F6E5EBF6BA34C1"
+            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.0/Clash.Verge_1.7.0_x64_portable.zip",
+            "hash": "10d543a08d00458eeb57e82ea478db05d0a58773987a9dbd16ad585c61237689"
         },
         "32bit": {
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.6.6/Clash.Verge_1.6.6_x86_portable.zip",
-            "hash": "8150E896BE88A8C5205B94F8630199E70285F42C5AE458D75FB9E211900CC70F"
+            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.0/Clash.Verge_1.7.0_x86_portable.zip",
+            "hash": "a7382dec093281ae018154776dc747acd5e7b5feeec81014b9add4e44b74b938"
         },
         "arm64": {
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.6.6/Clash.Verge_1.6.6_arm64_portable.zip",
-            "hash": "EEE1D7FA1B258B13885982DA1E8682D66898B04994C7366FA69D87CD7E5C0323"
+            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.0/Clash.Verge_1.7.0_arm64_portable.zip",
+            "hash": "b425c6b5547cdc5366ae0e68427c28ab0f5003225da260d5202370141e3977bd"
         }
     },
     "shortcuts": [
@@ -23,9 +23,7 @@
             "Clash Verge"
         ]
     ],
-    "persist": [
-        ".config"
-    ],
+    "persist": ".config",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
