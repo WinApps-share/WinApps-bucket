@@ -1,21 +1,21 @@
 {
-    "version": "1.8.1-alpha",
+    "version": "1.8.1",
     "description": "集成各种插件的 clash 客户端",
     "homepage": "https://github.com/GUI-for-Cores/GUI.for.Clash",
     "license": "",
     "notes": "",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.8.1-alpha/GUI.for.Clash-windows-amd64.zip",
-            "hash": "d914a8cf8cb8327c1c6bc29eb90b13181835f4598b6c9d3fa5d6c0e332677e8d"
+            "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.8.1/GUI.for.Clash-windows-amd64.zip",
+            "hash": "1af5bdbefe2d7bfac084f1c5fdae43393aae7d70e1a8545604ef3c6a6d39e521"
         },
         "32bit": {
-            "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.8.1-alpha/GUI.for.Clash-windows-386.zip",
-            "hash": "e6f2ce2f532a36f41a23718e2a9c4debee7b27bc79a1c8d4507d1d04d01cf98f"
+            "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.8.1/GUI.for.Clash-windows-386.zip",
+            "hash": "c6ff6dd5842c3431be21375b0e87d4d29518ee2858e6aae04af9c3761d42a1a7"
         },
         "arm64": {
-            "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.8.1-alpha/GUI.for.Clash-windows-arm64.zip",
-            "hash": "6b6623835600bf5de2430275daa501c702acd96b05d06d5aba47c3add2b73a8b"
+            "url": "https://github.com/GUI-for-Cores/GUI.for.Clash/releases/download/v1.8.1/GUI.for.Clash-windows-arm64.zip",
+            "hash": "0b4874fce0c2f08961dfedbcceea6b3dd45a6739f66af7d839f6c2e7df4c5c61"
         }
     },
     "shortcuts": [
