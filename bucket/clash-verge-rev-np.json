@@ -1,20 +1,20 @@
 {
-    "version": "1.7.1",
+    "version": "1.7.2",
     "description": "clash 客户端",
     "homepage": "https://github.com/clash-verge-rev/clash-verge-rev",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.1/Clash.Verge_1.7.1_x64-setup.exe#/dl.7z",
-            "hash": "ee16ff7f87122db3623580021c06ef0393cd30627b8eb0f49d8bc931e72a6ef5"
+            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.2/Clash.Verge_1.7.2_x64-setup.exe#/dl.7z",
+            "hash": "de92cb593586d1698be00cb76596d6cf6d925907a7b18d7186540ec7fcc9297f"
         },
         "32bit": {
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.1/Clash.Verge_1.7.1_x86-setup.exe#/dl.7z",
-            "hash": "62c3c400a4e5b2cb14d7afd249c2a49036cd21df12712158c90c2f7d3b6e2cc3"
+            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.2/Clash.Verge_1.7.2_x86-setup.exe#/dl.7z",
+            "hash": "8310d465c6e6ad63cf2dc7c4e6fee5397c0bc244fd068621478d994ab5395c81"
         },
         "arm64": {
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.1/Clash.Verge_1.7.1_arm64-setup.exe#/dl.7z",
-            "hash": "8dc9181e74e9ba20ed75fab794438c7713c3071425b97d4fb439fcf1d9342632"
+            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.2/Clash.Verge_1.7.2_arm64-setup.exe#/dl.7z",
+            "hash": "afc92828eb2e7d3069c7a2320132c9a7c81c667315182083acb88d11d057646b"
         }
     },
     "shortcuts": [
