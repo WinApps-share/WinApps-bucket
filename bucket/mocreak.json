@@ -1,10 +1,10 @@
 {
-    "version": "2.2.0.301",
+    "version": "2.3.0.703",
     "description": "Office 部署工具",
     "homepage": "https://github.com/OdysseusYuan/Mocreak",
     "license": "Free",
-    "url": "https://github.com/OdysseusYuan/Mocreak/releases/download/v2.2.0/Mocreak_Portable_v2.2.0.301.zip",
-    "hash": "8c14d9eaad3a01fb34123801bd8a76c54444cd309cc2ea67727db325a54bc82e",
+    "url": "https://github.com/OdysseusYuan/Mocreak/releases/download/v2.3.0/Mocreak_Portable_v2.3.0.703.zip",
+    "hash": "1c7cc884bbb3240750f7197fa8abc69b571d793f1d002d8d2509567d9cd24744",
     "extract_dir": "Mocreak_Portable",
     "shortcuts": [
         [
