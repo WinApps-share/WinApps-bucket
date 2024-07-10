@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.wps.cn/",
     "description": "Complete office suite",
-    "version": "12.1.0.17145",
+    "version": "12.1.0.17147",
     "license": "Freeware",
-    "url": "https://official-package.wpscdn.cn/wps/download/WPS_Setup_17145.exe#/dl.7z",
-    "hash": "6721e58918bfe7a745070ce968c0882f3adacccb52a9e8c36969f9f886803d33",
+    "url": "https://official-package.wpscdn.cn/wps/download/WPS_Setup_17147.exe#/dl.7z",
+    "hash": "6256dbb723c248d5a4dbbcaf95ec991274ec6bd62f33317d46fedb3a661b06b0",
     "extract_dir": "$_11_",
     "pre_install": [
         "Expand-7zipArchive \"$dir\\`$EXEFILE\" -Switches '-t#'",
