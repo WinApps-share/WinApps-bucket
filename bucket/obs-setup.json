@@ -1,5 +1,5 @@
 {
-    "version": "30.1.2",
+    "version": "30.2.0",
     "description": "Video recording and live streaming software",
     "homepage": "https://obsproject.com",
     "license": "GPL-2.0-only",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-30.1.2-Full-Installer-x64.exe#dl.7z",
-            "hash": "0626384e8aa11211e77f11cc068cfedd0af043ebc71304ad7f8092173632121d",
+            "url": "https://github.com/obsproject/obs-studio/releases/download/30.2.0/OBS-Studio-30.2.0-Windows-Installer.exe#dl.7z",
+            "hash": "61107dac642d9a277d01ab72aff8d38805bcbe073ef2c3576223203f77717cc1",
             "shortcuts": [
                 [
                     "bin\\64bit\\obs64.exe",
@@ -31,13 +31,16 @@
         "Remove-Item \"$dir\\obs-plugins.original\" -Recurse -Force"
     ],
     "checkver": {
-        "url": "https://obsproject.com/download",
-        "regex": "OBS-Studio-([\\d.]+)"
+        "github": "https://github.com/obsproject/obs-studio"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-$version-Full-Installer-x64.exe#dl.7z"
+                "url": "https://github.com/obsproject/obs-studio/releases/download/$version/OBS-Studio-$version-Windows-Installer.exe#dl.7z",
+                "hash": {
+                    "url": "https://github.com/obsproject/obs-studio/releases/tag/$version",
+                    "regex": "$basename:\\s$sha256"
+                }
             }
         }
     }
