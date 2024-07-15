@@ -1,12 +1,12 @@
 {
-    "version": "1.14.0",
+    "version": "1.15.0",
     "description": "Share files to nearby devices. An open source cross-platform alternative to AirDrop.",
     "homepage": "https://localsend.org/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/localsend/localsend/releases/download/v1.14.0/LocalSend-1.14.0-windows-x86-64.exe",
-            "hash": "22023df4cf010d66c11def61b183cf6387922cb9ab6e4ab95a1695c56c9ab6dc"
+            "url": "https://github.com/localsend/localsend/releases/download/v1.15.0/LocalSend-1.15.0-windows-x86-64.exe",
+            "hash": "6ee23742fa59dba96c7be8fb953bf3f3f5828feec8ec05e3ae1ca0b08b0fdf5e"
         }
     },
     "innosetup": true,
