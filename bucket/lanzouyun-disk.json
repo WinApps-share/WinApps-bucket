@@ -1,12 +1,12 @@
 {
-    "version": "3.5.0",
+    "version": "3.5.1",
     "description": "Lanzou cloud third-party client",
     "homepage": "https://github.com/chenhb23/lanzouyun-disk",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/chenhb23/lanzouyun-disk/releases/download/v3.5.0/lanzouyun-3.5.0-x64-win.zip",
-            "hash": "4a6ebef937290dced461e2695e853d30db76a7a9d84029a3dc15a4e86d5356a6"
+            "url": "https://github.com/chenhb23/lanzouyun-disk/releases/download/v3.5.1/lanzouyun-3.5.1-x64-win.zip",
+            "hash": "933d87288a07b8c272ce6ea4f8196d8da22ad564a2f39dc52d60b33b4d63b71d"
         }
     },
     "checkver": {
