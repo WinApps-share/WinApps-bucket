@@ -1,5 +1,5 @@
 {
-    "version": "30.2.0",
+    "version": "30.2.1",
     "description": "Video recording and live streaming software",
     "homepage": "https://obsproject.com",
     "license": "GPL-2.0-only",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/obsproject/obs-studio/releases/download/30.2.0/OBS-Studio-30.2.0-Windows-Installer.exe#dl.7z",
-            "hash": "61107dac642d9a277d01ab72aff8d38805bcbe073ef2c3576223203f77717cc1",
+            "url": "https://github.com/obsproject/obs-studio/releases/download/30.2.1/OBS-Studio-30.2.1-Windows-Installer.exe#dl.7z",
+            "hash": "cebdfa116a443f657f88742980196b181b72e724e32d37898d147e4c47d14a0c",
             "shortcuts": [
                 [
                     "bin\\64bit\\obs64.exe",
