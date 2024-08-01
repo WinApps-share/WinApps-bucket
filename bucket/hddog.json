@@ -1,10 +1,10 @@
 {
-    "version": "3.3.24.607",
+    "version": "3.3.24.801",
     "description": "硬件狗狗，硬件信息检测跑分",
     "homepage": "https://yjgg.mydrivers.com/",
     "license": "Freeware",
-    "url": "https://file6.mydrivers.com/soft/HDDogSetup3.3.24.607.exe#/dl.7z",
-    "hash": "f2060965c783a5c5928b0d8522e0c8365ce95107ba3667cb39cd7e36b15198f5",
+    "url": "https://file6.mydrivers.com/soft/HDDogSetup3.3.24.801.exe#/dl.7z",
+    "hash": "3841f9e205467b2cfba021a64cea48ee302de09dcbf15b5c36af11108f3ed0e2",
     "installer": {
         "script": "Expand-7zipArchive \"$dir\\app.7z\" \"$dir\" -Removal | Out-Null"
     },
