@@ -9,7 +9,7 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/obsproject/obs-studio/releases/download/30.2.2/OBS-Studio-30.2.2-Windows-Installer.exe#dl.7z",
+            "url": "https://github.com/obsproject/obs-studio/releases/download/30.2.2/OBS-Studio-30.2.2-Windows-Installer.exe#/dl.7z",
             "hash": "c11eb303330b9638936bad26cf02b8313ca43557d2a63f5e5c00d1eab2a9682e",
             "shortcuts": [
                 [
