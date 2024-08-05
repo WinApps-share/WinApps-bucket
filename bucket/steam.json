@@ -1,5 +1,5 @@
 {
-    "version": "nightly",
+    "version": "2.10.91.91",
     "description": "Gaming hardware and software store by Valve Corporation",
     "homepage": "https://store.steampowered.com/",
     "license": {
@@ -7,6 +7,7 @@
         "url": "https://store.steampowered.com/legal/"
     },
     "url": "https://media.st.dl.eccdnx.com/client/installer/SteamSetup.exe#/dl.7z",
+    "hash": "7D3654531C32D941B8CAE81C4137FC542172BFA9635F169CB392F245A0A12BCB",
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
     "uninstaller": {
         "file": "uninstall.exe",
