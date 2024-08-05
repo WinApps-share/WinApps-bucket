@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/wanghongenpin/network_proxy_flutter/releases/download/V1.1.1/ProxyPin-Windows.zip",
-            "hash": "c7abe3e45f456fdbcfebd7057adb1cc769b3b319dfff4b1dcfe07b4478e13334"
+            "hash": "cb7f1228e71c59d6044f19b8c0df2da7d2b00dc1cb42bcba3872a9c22211f906"
         }
     },
     "extract_dir": "ProxyPin",
