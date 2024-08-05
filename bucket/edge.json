@@ -9,12 +9,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "http://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_",
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/6f215223-1df2-408a-a3f7-68adb66961ef/MicrosoftEdgeEnterpriseX64.msi",
             "hash": "b39e3f3bda94edd7b467ecc9ecd12f39d899a385dad091350c1e3f406de68eac"
         },
         "32bit": {
-            "url": "http://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_",
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/73329583-488b-49ff-948b-ea5354528de6/MicrosoftEdgeEnterpriseX86.msi",
             "hash": "ee9d866f41dadfff5f73b0fe26d899ea0fef4f5d062bca15e4932eca41385423"
+        },
+        "arm64": {
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/35cf7ae3-be1e-43e6-a9d0-a344bacf2842/MicrosoftEdgeEnterpriseARM64.msi",
+            "hash": "3A7F518D01ADDC6702FB2AF1442FC5D0189124D2468AA4EFCE0730405857FE5F"
         }
     },
     "installer": {
@@ -41,15 +45,5 @@
     "checkver": {
         "url": "https://docs.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel",
         "regex": ">Version ([\\d.]+)"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "http://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_"
-            },
-            "32bit": {
-                "url": "http://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_"
-            }
-        }
     }
 }
