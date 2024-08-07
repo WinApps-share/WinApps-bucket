@@ -1,17 +1,17 @@
 {
-    "version": "4.2.5",
+    "version": "4.2.6",
     "description": "基于 electron 的开源工具箱，自由集成丰富插件。",
     "homepage": "https://rubickcenter.github.io/rubick/",
     "license": "MIT",
     "notes": "config location: C:\\Users\\<your username>\\AppData\\Local\\rubickconfig location: C:\\Users\\<your username>\\AppData\\Roaming\\rubick",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/rubickCenter/rubick/releases/download/v4.2.5/rubick-Setup-4.2.5-x64.exe#/dl.7z",
-            "hash": "aef57f2d2b86cc09513265829c28039abfc5ca44554d018f469902b8aa755f81"
+            "url": "https://github.com/rubickCenter/rubick/releases/download/v4.2.6/rubick-Setup-4.2.6-x64.exe#/dl.7z",
+            "hash": "0d6876e8129d5e7eeffe4c3d1cc4e290d820e0bdab0afd80f8d9c3cf2f3a9396"
         },
         "32bit": {
-            "url": "https://github.com/rubickCenter/rubick/releases/download/v4.2.5/rubick-Setup-4.2.5-ia32.exe#/dl.7z",
-            "hash": "9776810d6b8e63a07106ee6928adfc91e2ad1fcd7e8317d2c3f2586b07896432"
+            "url": "https://github.com/rubickCenter/rubick/releases/download/v4.2.6/rubick-Setup-4.2.6-ia32.exe#/dl.7z",
+            "hash": "06c209a233a96bb4267a0335d67a8fd0d17c5542414f9abd504812939c573393"
         }
     },
     "pre_install": [
