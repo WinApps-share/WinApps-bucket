@@ -1,16 +1,16 @@
 {
-    "version": "3.5",
+    "version": "3.6",
     "homepage": "https://files.community/",
     "description": "A modern file explorer that pushes the boundaries of the Windows platform.",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.files.community/files/stable/Files.Package_3.5.0.0_Stable_Test/Files.Package_3.5.0.0_x64_arm64_Stable.msixbundle",
-            "hash": "bc4e073a80c0f8919464cb456d02d9d1dc47d8bfb32acd7284f504cf250fa6e4"
+            "url": "https://cdn.files.community/files/stable/Files.Package_3.6.0.0_Stable_Test/Files.Package_3.6.0.0_x64_arm64_Stable.msixbundle",
+            "hash": "CF51EE2515C31B00B5F4E9720D9B062BD9AE9CFCCB1F5A96ACE5092529B785A7"
         },
         "arm64": {
-            "url": "https://cdn.files.community/files/stable/Files.Package_3.5.0.0_Stable_Test/Files.Package_3.5.0.0_x64_arm64_Stable.msixbundle",
-            "hash": "bc4e073a80c0f8919464cb456d02d9d1dc47d8bfb32acd7284f504cf250fa6e4"
+            "url": "https://cdn.files.community/files/stable/Files.Package_3.6.0.0_Stable_Test/Files.Package_3.6.0.0_x64_arm64_Stable.msixbundle",
+            "hash": "CF51EE2515C31B00B5F4E9720D9B062BD9AE9CFCCB1F5A96ACE5092529B785A7"
         }
     },
     "pre_install": [
