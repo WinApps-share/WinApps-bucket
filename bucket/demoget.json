@@ -1,12 +1,12 @@
 {
-    "version": "1.0.12",
+    "version": "1.0.14",
     "description": "操作自动编辑成片的录屏软件",
     "homepage": "https://www.demoget.com",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://demo.update.lxfater.com/DemoGet-1.0.12-setup.exe#/dl.7z",
-            "hash": "d351ad10c9ce52234b72bdadc3fd503701bcb7c6a9aeb461eca267a984ed62e9"
+            "url": "https://demo.update.lxfater.com/DemoGet-1.0.14-setup.exe#/dl.7z",
+            "hash": "0cd3fb8569adcb903f5f2d8707bb68bb0da7533963e6bb9ab7f8d5d4b96a4bc8"
         }
     },
     "installer": {
