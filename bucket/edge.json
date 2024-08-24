@@ -1,6 +1,6 @@
 {
     "##": "Checkver URL https://docs.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel",
-    "version": "127.0.2651.105",
+    "version": "128.0.2739.42",
     "description": "Microsoft Edge. The chromium based Microsoft Edge browser.",
     "homepage": "https://www.microsoft.com/en-us/edge/business",
     "license": {
@@ -9,16 +9,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/8726d95e-f92e-406a-82d7-614b0900aabb/MicrosoftEdgeEnterpriseX64.msi",
-            "hash": "53C232064D4A296F63A524DB2247F923E058DD7A102AD2B32767CD77A7F77453"
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/a1026d17-ad76-425d-a522-10f538814ede/MicrosoftEdgeEnterpriseX64.msi",
+            "hash": "1986A1828B5213104D10B28F5F6C562827BD73C6C326EE49EDFC9011534E1FB5"
         },
         "32bit": {
-            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/908301b7-287b-4dc2-b2ae-72a28615dd54/MicrosoftEdgeEnterpriseX86.msi",
-            "hash": "C1C1678CB215136E92C61372B00395D5EFC94C3B80E7CFDC4037D3C3D0C63FA2"
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/55112b5e-1af0-42a6-9d4a-bd077677bad3/MicrosoftEdgeEnterpriseX86.msi",
+            "hash": "FFD503627D812780A68227F265299263A61BC7D9274B55D8BEC5E60F1D0FFCF1"
         },
         "arm64": {
-            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/be523707-8f89-43a2-bf20-b3a3b1791d4a/MicrosoftEdgeEnterpriseARM64.msi",
-            "hash": "EBA779D42330A01AD691C3A761BA0D1860B5580B8A3459C2279381BE21B9469B"
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/879c34ff-99b5-473e-9c51-ab84ac470c2e/MicrosoftEdgeEnterpriseARM64.msi",
+            "hash": "D53FF1DB58C2252DF9A3774D7F6BB82861B2DB1A6DC0220E3C24DC0DAAF29944"
         }
     },
     "installer": {
