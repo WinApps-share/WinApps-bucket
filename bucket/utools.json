@@ -27,8 +27,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://publish.u-tools.cn/version2/newest-version.json",
-        "jsonpath": "$.win32.x64"
+        "url": "https://www.u.tools/docs/guide/changelog.html",
+        "regex": "uTools\\s([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
