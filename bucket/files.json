@@ -6,11 +6,11 @@
     "architecture": {
         "64bit": {
             "url": "https://cdn.files.community/files/stable/Files.Package_3.7.0.0_Stable_Test/Files.Package_3.7.0.0_x64_arm64_Stable.msixbundle",
-            "hash": "5b8ade55ceddb3ce714d4e9fbd1b01c0fa452c47c318986825394a9c1782"
+            "hash": "5b8ade55ceddb3ce714d4e9fbd1b01c0fa452c47c318986825394a9c17829875"
         },
         "arm64": {
             "url": "https://cdn.files.community/files/stable/Files.Package_3.7.0.0_Stable_Test/Files.Package_3.7.0.0_x64_arm64_Stable.msixbundle",
-            "hash": "5b8ade55ceddb3ce714d4e9fbd1b01c0fa452c47c318986825394a9c1782"
+            "hash": "5b8ade55ceddb3ce714d4e9fbd1b01c0fa452c47c318986825394a9c17829875"
         }
     },
     "pre_install": [
