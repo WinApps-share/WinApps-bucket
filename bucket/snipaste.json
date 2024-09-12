@@ -1,5 +1,5 @@
 {
-    "version": "2.9.2",
+    "version": "2.10",
     "description": "A snipping tool, which allows you to pin the screenshot back onto the screen.",
     "homepage": "https://zh.snipaste.com/",
     "license": "Unknown",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download.snipaste.com/archives/Snipaste-2.9.2-Beta-x64.zip",
-            "hash": "sha1:eb39192ff6534e9a56b06b3a4fd211bcfc54a1c6"
+            "url": "https://download.snipaste.com/archives/Snipaste-2.10-x64.zip",
+            "hash": "sha1:be62f1e0ca78d0f6f678a42e2fea4ec6616d523e"
         },
         "32bit": {
-            "url": "https://download.snipaste.com/archives/Snipaste-2.9.2-Beta-x86.zip",
-            "hash": "sha1:ca22bde7ce765e60499f216d9cb8bd7108bc2566"
+            "url": "https://download.snipaste.com/archives/Snipaste-2.10-x86.zip",
+            "hash": "sha1:dad62032a4cdd26093e2ba4eb89e6c022a93421d"
         }
     },
     "pre_install": [
@@ -36,10 +36,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download.snipaste.com/archives/Snipaste-$version-Beta-x64.zip"
+                "url": "https://download.snipaste.com/archives/Snipaste-$version-x64.zip"
             },
             "32bit": {
-                "url": "https://download.snipaste.com/archives/Snipaste-$version-Beta-x86.zip"
+                "url": "https://download.snipaste.com/archives/Snipaste-$version-x86.zip"
             }
         },
         "hash": {
