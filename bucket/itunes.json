@@ -1,16 +1,16 @@
 {
-    "version": "12.13.2.3",
+    "version": "12.13.3.2",
     "description": "Media player, mobile device management utility, iTunes Store client",
     "license": "Proprietary",
     "homepage": "https://www.apple.com/itunes/",
     "architecture": {
         "64bit": {
             "url": "https://www.apple.com/itunes/download/win64#/dl.7z",
-            "hash": "9cbaef01a8e2be6f4aa68768484268def7ca71491b71e56b435d4878da3232fd"
+            "hash": "08f399888efd2ddb16147c28e893cf60c8c6a997f06e4fae89b14886cb5bdeb4"
         },
         "32bit": {
             "url": "https://www.apple.com/itunes/download/win32#/dl.7z",
-            "hash": "145a32239b2da5048920f46367fdc672daa91c66cbfbff039678b0e878791d3f"
+            "hash": "de72dbfaeae29b77423795b304cc5b62c26ff79c29f16aeb058d51b5a410aeb4"
         }
     },
     "pre_install": [
