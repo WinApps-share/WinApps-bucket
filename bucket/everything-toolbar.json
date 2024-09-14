@@ -21,6 +21,9 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/srwi/EverythingToolbar/releases/download/$version/EverythingToolbar-$version.msi"
+        "url": "https://github.com/srwi/EverythingToolbar/releases/download/$version/EverythingToolbar-$version.msi",
+        "hash": {
+            "url": "https://github.com/srwi/EverythingToolbar/releases/download/$version/EverythingToolbar-$version.sha256"
+        }
     }
 }
