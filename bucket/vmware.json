@@ -1,5 +1,5 @@
 {
-    "version": "17.5.1",
+    "version": "17.6.0",
     "homepage": "https://www.vmware.com/ca/products/workstation-player.html",
     "description": "An application for creating and running virtual machines on your computer.",
     "license": {
@@ -8,11 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download3.vmware.com/software/WKST-PLAYER-1751/VMware-player-full-17.5.1-23298084.exe#/setup.exe",
-            "hash": "50f5596fbd3fd60336f368e35f9ca991a4be1aa40d94cf5017c3abd104b24f8b"
+            "url": "https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.0/24238078/windows/core/VMware-workstation-17.6.0-24238078.exe.tar",
+            "hash": "8866101cd4d411dc4f75ecba2458b95ad5ca4edd177e2a500a9d3662ea37fc50"
         }
     },
     "pre_install": [
+        "Get-ChildItem -Path \"$dir\" -Filter \"*.exe\" | Rename-Item -NewName \"setup.exe\"",
         "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
         "Start-Process \"$dir\\setup.exe\" -Wait -Verb 'RunAs' -ArgumentList '/x'; Remove-Item \"$dir\\setup.exe\"",
         "$msiInstaller = (Get-ChildItem \"$env:TEMP\" -Filter 'VMware*' -Recurse -Force).FullName; Copy-Item $msiInstaller \"$dir\\setup.msi\" -Force",
@@ -28,21 +29,14 @@
         "}"
     ],
     "checkver": {
-        "url": "https://www.softpedia.com/get/System/OS-Enhancements/VMware-Player.shtml",
-        "regex": "VMware-player-full-(?<version>[\\d.]+)-(?<build>[\\d]+).exe",
+        "url": "https://vmware-player.en.uptodown.com/windows/download",
+        "regex": "VMware Workstation Pro\\s(?<version>[\\d.]+)\\sBuild\\s(?<build>[\\d]+)",
         "replace": "${version}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download3.vmware.com/software/WKST-PLAYER-$cleanVersion/VMware-player-full-$version-$matchBuild.exe#/setup.exe",
-                "hash": {
-                    "type": "sha256",
-                    "url": "https://customerconnect.vmware.com/channel/public/api/v1.0/dlg/details?locale=en_US&downloadGroup=WKST-PLAYER-$cleanVersion",
-                    "mode": "json",
-                    "jsonpath": "$.downloadFiles[1].sha256checksum",
-                    "find": "$sha256"
-                }
+                "url": "https://softwareupdate.vmware.com/cds/vmw-desktop/ws/$version/$matchBuild/windows/core/VMware-workstation-$version-$matchBuild.exe.tar"
             }
         }
     }
