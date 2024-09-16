@@ -26,16 +26,16 @@
         "script": "Get-AppxPackage -Name Files | Remove-AppxPackage -Confirm:$false -PreserveApplicationData:$false"
     },
     "checkver": {
-        "url": "https://github.com/files-community/Files/releases/latest",
-        "regex": "v([\\d.]+)"
+        "url": "https://raw.githubusercontent.com/files-community/Files/main/src/Files.App%20(Package)/Package.appxmanifest",
+        "regex": "Version=\"([\\d.]+)\""
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://cdn.files.community/files/stable/Files.Package_$version.0_Stable_Test/Files.Package_$version.0_x64_arm64_Stable.msixbundle"
+                "url": "https://cdn.files.community/files/stable/Files.Package_$version_Stable_Test/Files.Package_$version_x64_arm64_Stable.msixbundle"
             },
             "arm64": {
-                "url": "https://cdn.files.community/files/stable/Files.Package_$version.0_Stable_Test/Files.Package_$version.0_x64_arm64_Stable.msixbundle"
+                "url": "https://cdn.files.community/files/stable/Files.Package_$version_Stable_Test/Files.Package_$version_x64_arm64_Stable.msixbundle"
             }
         }
     }
