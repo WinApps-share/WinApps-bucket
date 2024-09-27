@@ -1,16 +1,16 @@
 {
-    "version": "2.2409.7.0",
+    "version": "2.2410.1.0",
     "description": "一款哔哩哔哩第三方桌面应用，适用于 Windows 11",
     "homepage": "https://github.com/Richasy/Bili.Copilot",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Richasy/Bili.Copilot/releases/download/v2.2409.7.0/BiliCopilot_2.2409.7.0_x64.7z",
-            "hash": "13d190e7de78f82f785697beed96e5698478bc94dd57fb3680787902b90ed69a"
+            "url": "https://github.com/Richasy/Bili.Copilot/releases/download/v2.2410.1.0/BiliCopilot_2.2410.1.0_x64.7z",
+            "hash": "ccf8d04b42941fd65dc9b616cb54033121e1ae2a7eb0182118efb38269c19543"
         },
         "arm64": {
-            "url": "https://github.com/Richasy/Bili.Copilot/releases/download/v2.2409.7.0/BiliCopilot_2.2409.7.0_arm64.7z",
-            "hash": "32e1b7d85decad18034d8582d6c746dd9648a40b49a19ec5de3a8831b52dde20"
+            "url": "https://github.com/Richasy/Bili.Copilot/releases/download/v2.2410.1.0/BiliCopilot_2.2410.1.0_arm64.7z",
+            "hash": "ffd1f653a56c5ee4f0b00511532c6dc8e0c914b16ce5ca42213d6cd7d55ef8e5"
         }
     },
     "pre_install": [
