@@ -1,10 +1,10 @@
 {
-    "version": "1.16.49",
+    "version": "1.16.50",
     "description": "12306抢票软件",
     "homepage": "https://www.bypass.cn/",
     "license": "FREE",
-    "url": "https://yd.bypass.cn/Bypass_1.16.49.zip",
-    "hash": "a76203508d81adde64550c05cbe8e066825ce9e2b4a1ce9585adcf658ac9990f",
+    "url": "https://yd.bypass.cn/Bypass_1.16.50.zip",
+    "hash": "d75df16e5f3312c7cee3bf0620e53ac565a5df7c3b9f99d46dc58b42d5241a40",
     "extract_dir": "Bypass",
     "shortcuts": [
         [
