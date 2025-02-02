@@ -6,8 +6,28 @@
         "identifier": "Freeware",
         "url": "https://www.diskanalyzer.com/eula"
     },
-    "url": "https://www.diskanalyzer.com/files/wiztree_4_24_portable.zip",
-    "hash": "80fb53b2cb650ebe6ddede2e5f01dd6d02ae67c0588ab2d231b018d1c278f91f",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.diskanalyzer.com/files/wiztree_4_24_portable.zip",
+            "hash": "80fb53b2cb650ebe6ddede2e5f01dd6d02ae67c0588ab2d231b018d1c278f91f",
+            "shortcuts": [
+                [
+                    "WizTree64.exe",
+                    "WizTree"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://www.diskanalyzer.com/files/wiztree_4_24_portable.zip",
+            "hash": "80fb53b2cb650ebe6ddede2e5f01dd6d02ae67c0588ab2d231b018d1c278f91f",
+            "shortcuts": [
+                [
+                    "WizTree.exe",
+                    "WizTree"
+                ]
+            ]
+        }
+    },
     "pre_install": [
         "$default_content = \"[frmWizTreeMain]`r`nactWindowsContextMenu_Checked=FALSE`r`nactRunAsAdmin_Checked=FALSE\"",
         "if (!(Test-Path \"$persist_dir\\WizTree3.ini\")) {",
@@ -17,32 +37,6 @@
         "    Set-Content \"$persist_dir\\WizTree3.ini\" $default_content -Encoding ascii",
         "}"
     ],
-    "architecture": {
-        "64bit": {
-            "bin": [
-                "WizTree64.exe",
-                [
-                    "WizTree64.exe",
-                    "WizTree"
-                ]
-            ],
-            "shortcuts": [
-                [
-                    "WizTree64.exe",
-                    "WizTree"
-                ]
-            ]
-        },
-        "32bit": {
-            "bin": "WizTree.exe",
-            "shortcuts": [
-                [
-                    "WizTree.exe",
-                    "WizTree"
-                ]
-            ]
-        }
-    },
     "persist": "WizTree3.ini",
     "checkver": {
         "url": "https://www.diskanalyzer.com/download",
