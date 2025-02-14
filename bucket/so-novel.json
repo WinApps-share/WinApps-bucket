@@ -9,6 +9,7 @@
     "url": "https://github.com/pcdd-group/so-novel/releases/download/v1.7.8/sonovel-windows.tar.gz",
     "hash": "e18fdccf51a2c12dbab0e49ba09469376789385dd6d962d3d70119cb31b72c25",
     "extract_dir": "SoNovel",
+    "bin": "SoNovel.exe",
     "shortcuts": [
       [
         "SoNovel.exe",
