@@ -1,12 +1,12 @@
 {
-    "version": "1.1.10",
+    "version": "1.1.13",
     "description": "一款支持多个大语言模型（LLM）服务商的桌面客户端",
     "homepage": "https://github.com/CherryHQ/cherry-studio/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.10/Cherry-Studio-1.1.10-setup.exe#/dl.7z",
-            "hash": "38c1d941ceb0dee83f236f20afb5ace81173466c48e3c086f949f657aa7b2f72"
+            "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.1.13/Cherry-Studio-1.1.13-setup.exe#/dl.7z",
+            "hash": "135686c561dd7c545429de06f6aa2e9abdc7624e1f589cd5c5f878278194e49d"
         }
     },
     "pre_install": [
