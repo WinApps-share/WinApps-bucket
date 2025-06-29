@@ -76,9 +76,10 @@ def update_json(json_path, url32, url64, hash32, hash64, version):
         if '32bit' in data['architecture']:
             data['architecture']['32bit']['url'] = url32
             data['architecture']['32bit']['hash'] = hash32
-    # 写回文件（带缩进，utf-8-sig）
-    with open(json_path, 'w', encoding='utf-8-sig') as f:
+    # 写回文件（带缩进，utf-8），并保留原文件末尾的空行
+    with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
+        f.write('\n')  # 总是补一个换行
     print(f'[INFO] Updated {json_path} to version {version}')
 
 def get_url_etag(url):
@@ -101,6 +102,7 @@ def should_update(url, etag_file):
             return False
     with open(etag_file, 'w', encoding='utf-8') as f:
         f.write(new_etag)
+        f.write('\n')
     print('[INFO] ETag changed or first run, will update.')
     return True
 
