@@ -31,7 +31,7 @@ for folder in os.listdir(base_dir):
         # 检查根路径是否有变更
         result = subprocess.run(['git', 'status', '--porcelain', root_dir], capture_output=True, text=True)
         if result.stdout.strip():
-            commit_msg = f'【{folder}】: Update to version {version or "unknown"}'
+            commit_msg = f'{folder}: Update to version {version or "unknown"}'
             subprocess.run(['git', 'add', root_dir], check=True)
             subprocess.run(['git', 'commit', '-m', commit_msg], check=True)
             subprocess.run(['git', 'push'], check=True)
