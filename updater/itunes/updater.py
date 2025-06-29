@@ -10,16 +10,23 @@ URL32 = 'https://www.apple.com/itunes/download/win32'
 URL64 = 'https://www.apple.com/itunes/download/win64'
 TMP32 = r'updater/itunes/itunes32.exe'
 TMP64 = r'updater/itunes/itunes64.exe'
+ETAG_FILE = r'updater/itunes/itunes.etag'
 
 def get_final_url(url):
     print(f"[INFO] Resolving final URL for: {url}")
-    resp = requests.head(url, allow_redirects=True)
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+    }
+    resp = requests.head(url, allow_redirects=True, headers=headers)
     print(f"[INFO] Final URL: {resp.url}")
     return resp.url
 
 def download(url, filename):
     print(f"[INFO] Downloading {url} -> {filename}")
-    with requests.get(url, stream=True) as r:
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+    }
+    with requests.get(url, stream=True, headers=headers) as r:
         r.raise_for_status()
         with open(filename, 'wb') as f:
             for chunk in r.iter_content(chunk_size=8192):
@@ -74,8 +81,33 @@ def update_json(json_path, url32, url64, hash32, hash64, version):
         json.dump(data, f, indent=4, ensure_ascii=False)
     print(f'[INFO] Updated {json_path} to version {version}')
 
+def get_url_etag(url):
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+    }
+    resp = requests.head(url, allow_redirects=True, headers=headers)
+    return resp.headers.get('ETag')
+
+def should_update(url, etag_file):
+    new_etag = get_url_etag(url)
+    if not new_etag:
+        print('[WARN] No ETag found, will always update.')
+        return True
+    if os.path.exists(etag_file):
+        with open(etag_file, 'r', encoding='utf-8') as f:
+            old_etag = f.read().strip()
+        if old_etag == new_etag:
+            print('[INFO] ETag not changed, skip update.')
+            return False
+    with open(etag_file, 'w', encoding='utf-8') as f:
+        f.write(new_etag)
+    print('[INFO] ETag changed or first run, will update.')
+    return True
+
 def main():
     print("[INFO] Start updating iTunes bucket...")
+    if not should_update(URL32, ETAG_FILE):
+        return
     real_url32 = get_final_url(URL32)
     real_url64 = get_final_url(URL64)
     download(real_url32, TMP32)
