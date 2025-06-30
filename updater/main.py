@@ -17,9 +17,8 @@ for folder in os.listdir(base_dir):
                 script_path = os.path.join(folder_path, file)
                 print(f'Running {script_path}...')
                 subprocess.run(['python', script_path], check=True)
-        # 获取版本号（读取 bucket/itunes.json 的 version 字段）
         version = None
-        json_file = os.path.join(root_dir, 'bucket', 'itunes.json')
+        json_file = os.path.join(root_dir, 'bucket', f'{folder}.json')
         if os.path.exists(json_file):
             try:
                 with open(json_file, encoding='utf-8') as jf:
