@@ -1,7 +1,11 @@
+import sys
 import requests
 import json
 import hashlib
 from pathlib import Path
+
+# 强制标准输出为utf-8，解决Windows控制台中文输出报错
+sys.stdout.reconfigure(encoding='utf-8')
 
 def fetch_edge_info(architecture):
     """
