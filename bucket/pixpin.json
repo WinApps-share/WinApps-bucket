@@ -18,8 +18,8 @@
         "History"
     ],
     "checkver": {
-        "url": "https://pixpin.cn/docs/",
-        "regex": "/change-log/([\\d.]+).md"
+        "url": "https://api.viewdepth.cn/app_info?app_id=pixpin&update_type=1&sys=win&ver=0.0.0",
+        "jsonpath": "$.ver_info.version"
     },
     "autoupdate": {
         "url": "https://download.pixpinapp.com/PixPin_zh-cn_$version.zip"
