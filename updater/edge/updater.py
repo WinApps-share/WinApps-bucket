@@ -47,6 +47,7 @@ def update_edge_json(json_path):
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
     print(f"正在更新 {json_path} ...")
+    version = None
     for arch in ["64bit", "32bit", "arm64"]:
         print(f"获取 {arch} 信息 ...")
         info = fetch_edge_info(arch)
@@ -54,7 +55,12 @@ def update_edge_json(json_path):
         print(f"{arch} hash: {info['hash']}")
         data["architecture"][arch]["url"] = info["url"]
         data["architecture"][arch]["hash"] = info["hash"]
-        data["version"] = info["version"]  # 保证主版本号同步
+        if version is None:
+            version = info["version"]
+        elif version != info["version"]:
+            print(f"警告：{arch} 的版本号 {info['version']} 与其他架构不一致！")
+    if version:
+        data["version"] = version  # 只写入一次主版本号
     print(f"全部信息获取完毕，正在写入文件 ...")
     # 格式化输出，末尾保留空行
     with open(json_path, "w", encoding="utf-8") as f:
