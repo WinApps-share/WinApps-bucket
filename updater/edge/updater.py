@@ -60,6 +60,9 @@ def update_edge_json(json_path):
         elif version != info["version"]:
             print(f"警告：{arch} 的版本号 {info['version']} 与其他架构不一致！")
     if version:
+        if data.get("version") == version:
+            print(f"版本号未变化（{version}），跳过写入。")
+            return
         data["version"] = version  # 只写入一次主版本号
     print(f"全部信息获取完毕，正在写入文件 ...")
     # 格式化输出，末尾保留空行
