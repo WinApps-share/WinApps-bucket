@@ -1,5 +1,5 @@
 {
-    "version": "1.103.0",
+    "version": "1.102.3",
     "description": "Lightweight but powerful source code editor",
     "homepage": "https://code.visualstudio.com/",
     "license": {
@@ -14,12 +14,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/972d323165139d47d934dd64230f6aec7e19b18a/VSCode-win32-x64-1.103.0.zip",
-            "hash": "bf25311dfbb7c3846651f37c2c8c3b68fcf4dcada04b2e16e022d91c15a77a14"
+            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/488a1f239235055e34e673291fb8d8c810886f81/VSCode-win32-x64-1.102.3.zip",
+            "hash": "d25af03370f4e0556ca3f20caf74b6156e2d795e8c1bbc8cd3cb0b1b4844871d"
         },
         "arm64": {
-            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/972d323165139d47d934dd64230f6aec7e19b18a/VSCode-win32-arm64-1.103.0.zip",
-            "hash": "558549462413d1e18effd499c35a07048d5ae6993af9e3b75afaa1d7feba0f69"
+            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/488a1f239235055e34e673291fb8d8c810886f81/VSCode-win32-arm64-1.102.3.zip",
+            "hash": "dc1c66bec4472810c003990a7075affda08dc933ebe8ef38204a194cfcdace56"
         }
     },
     "env_add_path": "bin",
