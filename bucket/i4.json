@@ -5,11 +5,11 @@
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://d-app6.i4.cn//i4tools/V9/i4Tools_v9.03.010_Setup_x64.exe#/dl.7z",
+            "url": "https://d-app6.i4.cn/i4tools/V9/i4Tools_v9.03.010_Setup_x64.exe#/dl.7z",
             "hash": "fd84d9bb9096e1a20d1ccabf7642bc7a8fcd56dd8efd4549befcd822e3ae6d07"
         },
         "32bit": {
-            "url": "https://d-app6.i4.cn//i4tools/V9/i4Tools_v9.03.010_Setup_x86.exe#/dl.7z",
+            "url": "https://d-app6.i4.cn/i4tools/V9/i4Tools_v9.03.010_Setup_x86.exe#/dl.7z",
             "hash": "92d25cb15a8d576980240af8ed25f1472b4885c8074c57bfbc6925280f7a6870"
         }
     },
@@ -41,15 +41,15 @@
             "try { $detail = Invoke-WebRequest 'https://url.i4.cn/bUjmeyaa' -MaximumRedirection 0 -ErrorAction Ignore } catch { $_.Exception.Response }",
             "return $detail.Headers.Location"
         ],
-        "regex": "https://(?<partialurl>.*)/i4tools/V(?<majorVersion>\\d)/i4Tools_v([\\d.]+?)_Setup_x64.exe"
+        "regex": "V(?<majorVersion>\\d)/i4Tools_v([\\d.]+?)_Setup_x64.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://$matchPartialurl//i4tools/V$majorVersion/i4Tools_v$version_Setup_x64.exe#/dl.7z"
+                "url": "https://d-app6.i4.cn/i4tools/V$majorVersion/i4Tools_v$version_Setup_x64.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://$matchPartialurl//i4tools/V$majorVersion/i4Tools_v$version_Setup_x86.exe#/dl.7z"
+                "url": "https://d-app6.i4.cn/i4tools/V$majorVersion/i4Tools_v$version_Setup_x86.exe#/dl.7z"
             }
         }
     }
