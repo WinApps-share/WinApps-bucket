@@ -1,13 +1,13 @@
 {
-    "version": "1.9.3",
+    "version": "1.9.4",
     "description": "交互式书源下载器，支持 epub 导出",
     "homepage": "https://github.com/pcdd-group/so-novel",
     "license": {
         "identifier": "Apache-2.0 license",
         "url": "https://github.com/pcdd-group/so-novel#Apache-2.0-1-ov-file"
     },
-    "url": "https://github.com/pcdd-group/so-novel/releases/download/v1.9.3/sonovel-windows.tar.gz",
-    "hash": "ca25aec414b1913d2f29d6e401c10c9890663b9da37c6673e607874bcf57dc95",
+    "url": "https://github.com/pcdd-group/so-novel/releases/download/v1.9.4/sonovel-windows.tar.gz",
+    "hash": "9c26e72f9aa641069031532b0fb6e8dda15fc982e9f041f9818896066d23e257",
     "extract_dir": "SoNovel",
     "bin": "SoNovel.exe",
     "shortcuts": [
