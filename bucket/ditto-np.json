@@ -5,11 +5,11 @@
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sabrogden/Ditto/releases/download/3.25.113.0/DittoPortable_3_25_113_0.zip",
-            "hash": "c21dc05f27f744813e0f19d2d20842546baea160ab366382548aa283e2636216"
+            "url": "https://github.com/sabrogden/Ditto/releases/download/3.25.113.0/DittoSetup_3_25_113_0.exe",
+            "hash": "fc354f1e9b9d2984099d4da93b4c569866dfe9bf1f590c1313e85e07f41224d3"
         }
     },
-    "extract_dir": "Ditto",
+    "innosetup": true,
     "pre_install": [
         "$file = 'Ditto.Settings'",
         "if (!(Test-Path \"$persist_dir\\$file\")) {",
@@ -35,10 +35,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/sabrogden/Ditto/releases/download/$version/DittoPortable_$underscoreVersion.zip",
+                "url": "https://github.com/sabrogden/Ditto/releases/download/$version/DittoSetup_$underscoreVersion.exe",
                 "hash": {
                     "url": "https://github.com/sabrogden/Ditto/releases/expanded_assets/$version",
-                    "regex": "DittoPortable_(?<version>[\\d_]+).+zip.+([a-f0-9]{64})"
+                    "regex": "DittoSetup_(?<version>[\\d_]+).+exe.+([a-f0-9]{64})"
                 }
             }
         }
