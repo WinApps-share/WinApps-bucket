@@ -1,20 +1,20 @@
 {
-    "version": "0.5.0",
+    "version": "0.6.0-beta.1",
     "description": "跨平台剪切板管理工具",
     "homepage": "https://github.com/EcoPasteHub/EcoPaste",
     "license": " Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/EcoPasteHub/EcoPaste/releases/download/v0.5.0/EcoPaste_0.5.0_x64-setup.exe#/dl.7z",
-            "hash": "ef296e133fb1e675afe893d40e20cc528adaa383cc0831c8c0deb8db83e1d233"
+            "url": "https://github.com/EcoPasteHub/EcoPaste/releases/download/v0.6.0-beta.1/EcoPaste_0.6.0-beta.1_x64-setup.exe#/dl.7z",
+            "hash": "622744bd7f1e9b28f65a330bbd756158e6ba6718ec10d8964fd255e027fb2e9f"
         },
         "32bit": {
-            "url": "https://github.com/EcoPasteHub/EcoPaste/releases/download/v0.5.0/EcoPaste_0.5.0_x86-setup.exe#/dl.7z",
-            "hash": "68238222eb29fbddfec98c55d039591f224cfa6785da577676ee05e1174affc3"
+            "url": "https://github.com/EcoPasteHub/EcoPaste/releases/download/v0.6.0-beta.1/EcoPaste_0.6.0-beta.1_x86-setup.exe#/dl.7z",
+            "hash": "da9e2e16c0e46e9edadcc3c0c7e616e4cf396fd869d0dd26de0a65845f598f3d"
         },
         "arm64": {
-            "url": "https://github.com/EcoPasteHub/EcoPaste/releases/download/v0.5.0/EcoPaste_0.5.0_arm64-setup.exe#/dl.7z",
-            "hash": "e3e11f892a0a4f3f0858df4625e2620876062bdf40c4bb23ea954054c1cd04da"
+            "url": "https://github.com/EcoPasteHub/EcoPaste/releases/download/v0.6.0-beta.1/EcoPaste_0.6.0-beta.1_arm64-setup.exe#/dl.7z",
+            "hash": "62207eb98798e01b516a08676874f1cb271ba66512c58b571d7241fcf357117f"
         }
     },
     "pre_install": "Remove-Item -Path \"$dir\\[NSIS].nsi\",\"$dir\\uninstall.exe\" -Force -Recurse",
