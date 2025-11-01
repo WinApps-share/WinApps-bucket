@@ -1,16 +1,16 @@
 {
     "homepage": "https://github.com/stnkl/EverythingToolbar",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "替换 Win10/11 任务栏系统搜索框",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/srwi/EverythingToolbar/releases/download/2.1.0/EverythingToolbar-2.1.0-x64.exe",
-            "hash": "17e5a9bffe1f5a9c0664f34d6fb5715e1b86892610b7bd65f544f0a595fcd871"
+            "url": "https://github.com/srwi/EverythingToolbar/releases/download/2.1.1/EverythingToolbar-2.1.1-x64.exe",
+            "hash": "d2d85e74b39145304861437dec4a630b858b5ab421734be47da9edce229454ea"
         },
         "arm64": {
-            "url": "https://github.com/srwi/EverythingToolbar/releases/download/2.1.0/EverythingToolbar-2.1.0-arm64.exe",
-            "hash": "8ec60c6929503c0e5789fbdba4c169b082a50c079cb5907bd7dbd919a33020e1"
+            "url": "https://github.com/srwi/EverythingToolbar/releases/download/2.1.1/EverythingToolbar-2.1.1-arm64.exe",
+            "hash": "422acdd1c2ebcbb9d6fb770c2a45af2043d81eaaef5f46895cf387670948f020"
         }
     },
     "innosetup": true,
