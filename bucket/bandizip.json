@@ -1,10 +1,18 @@
 {
-    "version": "15",
+    "version": "7.40",
     "description": "Yet another typical ZIP archiver",
     "homepage": "http://www.bandisoft.com/bandizip/",
     "license": "Freeware",
-    "url": "https://bandisoft.app/bandizip/BANDIZIP-PORTABLE.ZIP",
-    "hash": "d3fe38f9fd66951c9a7922c8f4cfaca2bac39d1c18511d9477bc89d4628b09f0",
+    "architecture": {
+        "64bit": {
+            "url": "https://bandisoft.app/bandizip/BANDIZIP-PORTABLE.ZIP",
+            "hash": "d3fe38f9fd66951c9a7922c8f4cfaca2bac39d1c18511d9477bc89d4628b09f0"
+        },
+        "32bit": {
+            "url": "https://bandisoft.app/bandizip/BANDIZIP-PORTABLE.ZIP",
+            "hash": "d3fe38f9fd66951c9a7922c8f4cfaca2bac39d1c18511d9477bc89d4628b09f0"
+        }
+    },
     "installer": {
         "script": [
             "if([System.Environment]::Is64BitOperatingSystem){",
@@ -27,10 +35,17 @@
     "persist": "Bandizip.ini",
     "checkver": {
         "url": "https://en.bandisoft.com/bandizip/history/",
-        "regex": "v([\\d.]+)"
+        "regex": "class=\"cell1\">v([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://bandisoft.app/bandizip/BANDIZIP-PORTABLE.ZIP",
+        "architecture": {
+            "64bit": {
+                "url": "https://bandisoft.app/bandizip/BANDIZIP-PORTABLE.ZIP"
+            },
+            "32bit": {
+                "url": "https://bandisoft.app/bandizip/BANDIZIP-PORTABLE.ZIP"
+            }
+        },
         "hash": {
             "mode": "download"
         }
