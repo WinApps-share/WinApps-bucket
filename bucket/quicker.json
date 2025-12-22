@@ -1,16 +1,16 @@
 {
-    "version": "1.44.49.0",
+    "version": "1.44.50.0",
     "description": "指尖工具箱, Windows 效率工具",
     "homepage": "https://getquicker.net",
     "license": "Shareware",
     "architecture": {
         "64bit": {
-            "url": "https://download.getquicker.net/_productfiles/202512/Quicker.x64.1.44.49.0.msi",
-            "hash": "220ddc60be93f5c827128965a0bd284180b768e596b658281a98a71dfedcbd1b"
+            "url": "https://download.getquicker.net/_productfiles/202512/Quicker.x64.1.44.50.0.msi",
+            "hash": "9f86379a20e6eb24037a286c41d86fad037d53f798009c1abf1c1adf6a73c56d"
         },
         "32bit": {
-            "url": "https://download.getquicker.net/_productfiles/202512/Quicker.x86.1.44.49.0.msi",
-            "hash": "477dded7ed4101afd712695b7b2c800496f8ab61eb1068cd05808fef3d0dbad9"
+            "url": "https://download.getquicker.net/_productfiles/202512/Quicker.x86.1.44.50.0.msi",
+            "hash": "8f93a7c161c1af3314b37fc4a613c8ce991f426197758577a31190aa899301f8"
         }
     },
     "extract_dir": "Quicker",
