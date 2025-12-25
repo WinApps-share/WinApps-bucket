@@ -19,6 +19,7 @@
             "hash": ""
         }
     },
+    "innosetup": true,
     "extract_dir": "",
     "pre_install": "",
     "installer": {
