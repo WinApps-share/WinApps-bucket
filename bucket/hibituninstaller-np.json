@@ -6,15 +6,14 @@
         "identifier": "Proprietary"
     },
     "url": "https://cdn.winapps.cc/software/win/HiBitUninstaller-setup-3.2.70.exe",
-    "hash": "77e24fb420eb2b2c3b5814a17617beb4d3126cc38d8c3729f2dad91f6fc7bbea",
+    "hash": "BAEA4D07DFAD720BFD7D1188836682269EE3B7390261440608CC9C0152AD3B51",
     "innosetup": true,
     "shortcuts": [
         [
-            "HiBitUninstaller-Portable.exe",
+            "HiBitUninstaller.exe",
             "HiBitUninstaller"
         ]
     ],
-    "persist": "HiBitUninstaller",
     "checkver": {
         "url": "https://www.hibitsoft.ir/HiBitUninstaller/Changelog.txt",
         "regex": "HiBit Uninstaller\\s([\\d.]+)"
