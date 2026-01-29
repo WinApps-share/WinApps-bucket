@@ -1,5 +1,5 @@
 {
-    "version": "2.4.22",
+    "version": "2.3.42",
     "description": "The AI Code Editor",
     "homepage": "https://www.cursor.com/",
     "license": {
@@ -9,12 +9,12 @@
     "innosetup": true,
     "architecture": {
         "64bit": {
-            "url": "https://downloads.cursor.com/production/618c607a249dd7fd2ffc662c6531143833bebd44/win32/x64/user-setup/CursorUserSetup-x64-2.4.22.exe",
-            "hash": "0894ad9e1e42d930cfdaca1f47b5329659e7a3d2689e3dba824d59e195d0ce0d"
+            "url": "https://downloads.cursor.com/production/5eb96228f8b09e8d7cc58257d12704c505298b94/win32/x64/user-setup/CursorUserSetup-x64-2.3.42.exe",
+            "hash": "2337766d114197612ccdf3ccaf831d09bcfc392ad32c021fb4b05931014a45be"
         },
         "arm64": {
-            "url": "https://downloads.cursor.com/production/618c607a249dd7fd2ffc662c6531143833bebd44/win32/arm64/user-setup/CursorUserSetup-arm64-2.4.22.exe",
-            "hash": "fa3cecf68d4f47e34a43725f77e65c149f3346b3f017d311d95abd9223c0c659"
+            "url": "https://downloads.cursor.com/production/5eb96228f8b09e8d7cc58257d12704c505298b94/win32/arm64/user-setup/CursorUserSetup-arm64-2.3.42.exe",
+            "hash": "9278b0fe85ceb4a1d9c8dc82c673a31878f8856414ee58bd6239287948e56744"
         }
     },
     "extract_dir": "{code_GetDestDir}",
