@@ -10,7 +10,7 @@
 
 <br />
 
-这是一个 Scoop bucket，其中包含了 [WinApps 网站](https://winapps.cc)内大部分软件。让你无需下载安装包，直接使用 Scoop 命令行安装、更新、卸载软件。
+这是一个 Scoop bucket，其中包含了 [WinApps.cc 网站](https://winapps.cc)内大部分软件。让你无需下载安装包，直接使用 Scoop 命令行安装、更新、卸载软件。
 
 ## 使用方法
 
@@ -45,4 +45,13 @@ scoop update <软件名>
 scoop uninstall <软件名>
 ```
 
+## Star History
+
+<a href="https://www.star-history.com/#WinApps-share/WinApps-bucket&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=WinApps-share/WinApps-bucket&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=WinApps-share/WinApps-bucket&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=WinApps-share/WinApps-bucket&type=date&legend=top-left" />
+ </picture>
+</a>
 
