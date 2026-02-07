@@ -1,0 +1,26 @@
+{
+    "version": "0.18.1",
+    "description": "Fast FFmpeg GUI",
+    "homepage": "https://github.com/66HEX/frame",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/66HEX/frame/releases/download/0.18.1/Frame_0.18.1_x64-setup.exe#/dl.7z",
+            "hash": "8fb4fa54cbc0be71a431a0db7804b5a1cf39aee3e3429f3d8ac344a8c56a5b79"
+        }
+    },
+    "shortcuts": [
+        [
+            "frame.exe",
+            "Frame"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/66HEX/frame/releases/download/$version/Frame_$version_x64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
