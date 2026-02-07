@@ -1,6 +1,6 @@
 {
     "##": "Checkver URL https://docs.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel",
-    "version": "144.0.3719.104",
+    "version": "144.0.3719.115",
     "description": "Microsoft Edge. The chromium based Microsoft Edge browser.",
     "homepage": "https://www.microsoft.com/en-us/edge/business",
     "license": {
@@ -9,16 +9,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/17cbcabf-84f9-4081-b05d-ddf9ac6ef15a/MicrosoftEdgeEnterpriseX64.msi",
-            "hash": "E998F77833D41D77760B41C97CC5B4B9D7C9E373E1EED5E63A38A1C1A4831828"
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/f2a31dc0-dabd-4e4e-9618-0b31a3fc5d53/MicrosoftEdgeEnterpriseX64.msi",
+            "hash": "C53B607D35DB106531C84916513754A771BC70CD0680B7414AB31B1357334710"
         },
         "32bit": {
-            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/5daf8fd4-4e62-4f14-a674-1963c81a720d/MicrosoftEdgeEnterpriseX86.msi",
-            "hash": "DF6B2732D81498579DCF8CB1AAFC2D67B1ACA8C69E651F16CB28B0BF40DF782E"
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/3d694953-3896-49b2-80aa-d640ae391cd4/MicrosoftEdgeEnterpriseX86.msi",
+            "hash": "650D99C029F2C8C77AE218AAF6FB12D04C5551FAD8D5B9AF7DEA85D4243DBFF0"
         },
         "arm64": {
-            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/a0c02398-4171-421f-9f0c-17ce33fabf74/MicrosoftEdgeEnterpriseARM64.msi",
-            "hash": "79C357FFC54BC8F7F4E3C46036E091831590B8C738255FB46341E17C2FE448C3"
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/34bab6b6-bf4d-4ebb-9795-ec69e233ce2f/MicrosoftEdgeEnterpriseARM64.msi",
+            "hash": "06A35ADDE25A145F4A79E36585E84B88499261A32EB4E2B0737B62A953205501"
         }
     },
     "installer": {
