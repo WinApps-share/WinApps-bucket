@@ -1,5 +1,5 @@
 {
-    "version": "1.110.0",
+    "version": "1.109.3",
     "description": "Lightweight but powerful source code editor",
     "homepage": "https://code.visualstudio.com/",
     "license": {
@@ -14,11 +14,11 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/0366405821955682155a4507a122611c742df3fa/VSCode-win32-x64-1.110.0.zip",
+            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/b6a47e94e326b5c209d118cf0f994d6065585705/VSCode-win32-x64-1.109.3.zip",
             "hash": "c361df07f756f3b53e9286cbed02c89533813687a4406fd65e93af3daa73f388"
         },
         "arm64": {
-            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/0366405821955682155a4507a122611c742df3fa/VSCode-win32-arm64-1.110.0.zip",
+            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/b6a47e94e326b5c209d118cf0f994d6065585705/VSCode-win32-arm64-1.109.3.zip",
             "hash": "fb90cd4e94a8ee34fb2413a324d1a5544b54af4036e40e865e00d9d6e9a91486"
         }
     },
