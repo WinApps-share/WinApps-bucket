@@ -1,18 +1,18 @@
 {
-    "version": "10.3.0",
+    "version": "10.9.0",
     "description": "A free file archiver utility, based on Open Source technologies",
     "homepage": "https://www.peazip.org",
     "license": "LGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/peazip/PeaZip/releases/download/10.3.0/peazip_portable-10.3.0.WIN64.zip",
-            "hash": "da246b0a36367dad739f218ebb53e0f7cc05555770b4c75ea3d7f24134df183c",
-            "extract_dir": "peazip_portable-10.3.0.WIN64"
+            "url": "https://github.com/peazip/PeaZip/releases/download/10.9.0/peazip_portable-10.9.0.WIN64.zip",
+            "hash": "e760d0bbcb792a1f89378710e2cede7180e6ed417ba78f94a5960e55b57d16fe",
+            "extract_dir": "peazip_portable-10.9.0.WIN64"
         },
         "32bit": {
-            "url": "https://github.com/peazip/PeaZip/releases/download/10.3.0/peazip_portable-10.3.0.WINDOWS.zip",
-            "hash": "14512fe334ad9f73cb21db21f8c91a78ce54ecbe2ee8705c757a1905a3904625",
-            "extract_dir": "peazip_portable-10.3.0.WINDOWS"
+            "url": "https://github.com/peazip/PeaZip/releases/download/10.9.0/peazip_portable-10.9.0.WINDOWS.zip",
+            "hash": "822059992191ef7566550227fb469ff49c90086aaf44344fe9491a085f1a0fbc",
+            "extract_dir": "peazip_portable-10.9.0.WINDOWS"
         }
     },
     "pre_install": [

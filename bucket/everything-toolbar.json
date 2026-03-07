@@ -1,17 +1,20 @@
 {
     "homepage": "https://github.com/stnkl/EverythingToolbar",
-    "version": "1.5.1",
+    "version": "2.2.0",
     "description": "替换 Win10/11 任务栏系统搜索框",
     "license": "MIT",
-    "url": "https://github.com/srwi/EverythingToolbar/releases/download/1.5.1/EverythingToolbar-1.5.1.msi",
-    "hash": "53f0bf0fe11083f271ceb9c071a849327ae23905c66f59482d902b5484e6be68",
-    "depends": "winapps/everything",
-    "installer": {
-        "script": [
-            "Move-Item \"$dir\\EverythingToolbar\\*\" \"$dir\\\"",
-            "Remove-Item -Recurse \"$dir\\EverythingToolbar\""
-        ]
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/srwi/EverythingToolbar/releases/download/2.2.0/EverythingToolbar-2.2.0-x64.exe",
+            "hash": "c1dd83d593a96c47204b75f528277e107416a7002154693d1d6a7858d0b274bb"
+        },
+        "arm64": {
+            "url": "https://github.com/srwi/EverythingToolbar/releases/download/2.2.0/EverythingToolbar-2.2.0-arm64.exe",
+            "hash": "6e4534f749c9707c7dcc8e0bc111d245825064aae3b9a3487a7f52f342a0ccef"
+        }
     },
+    "innosetup": true,
+    "depends": "winapps/everything",
     "bin": "EverythingToolbar.Launcher.exe",
     "shortcuts": [
         [
@@ -21,9 +24,21 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/srwi/EverythingToolbar/releases/download/$version/EverythingToolbar-$version.msi",
-        "hash": {
-            "url": "https://github.com/srwi/EverythingToolbar/releases/download/$version/EverythingToolbar-$version.sha256"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/srwi/EverythingToolbar/releases/download/$version/EverythingToolbar-$version-x64.exe",
+                "hash": {
+                    "url": "$baseurl/EverythingToolbar-$version-x64.sha256",
+                    "mode": "extract"
+                }
+            },
+            "arm64": {
+                "url": "https://github.com/srwi/EverythingToolbar/releases/download/$version/EverythingToolbar-$version-arm64.exe",
+                "hash": {
+                    "url": "$baseurl/EverythingToolbar-$version-arm64.sha256",
+                    "mode": "extract"
+                }
+            }
         }
     }
 }

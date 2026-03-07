@@ -1,5 +1,5 @@
 {
-    "version": "2.48.1",
+    "version": "2.53.0",
     "description": "Distributed version control system",
     "homepage": "https://gitforwindows.org",
     "license": "GPL-2.0-only",
@@ -12,12 +12,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/PortableGit-2.48.1-64-bit.7z.exe#/dl.7z",
-            "hash": "a4335111b3363871cac632be93d7466154d8eb08782ff55103866b67d6722257"
+            "url": "https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/PortableGit-2.53.0-64-bit.7z.exe#/dl.7z",
+            "hash": "08713a710ec91ac90de1c09f861289a3b103175f098676e5e664c04dd6c6bf23"
         },
-        "32bit": {
-            "url": "https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/PortableGit-2.48.1-32-bit.7z.exe#/dl.7z",
-            "hash": "63ddbc7ea11ea8a1375f39f45d38f928dbec564360ad12dd11d0d649474063a0"
+        "arm64": {
+            "url": "https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/PortableGit-2.53.0-arm64.7z.exe#/dl.7z",
+            "hash": "dc59b7383104d57110e370638854cc1b1fd50de0fa6d293dc941f35094594298"
         }
     },
     "post_install": [
@@ -69,8 +69,8 @@
             "64bit": {
                 "url": "https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/PortableGit-$version-64-bit.7z.exe#/dl.7z"
             },
-            "32bit": {
-                "url": "https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/PortableGit-$version-32-bit.7z.exe#/dl.7z"
+            "arm64": {
+                "url": "https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/PortableGit-$version-arm64.7z.exe#/dl.7z"
             }
         },
         "hash": {

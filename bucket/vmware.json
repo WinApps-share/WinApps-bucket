@@ -1,15 +1,12 @@
 {
-    "version": "17.6.0",
-    "homepage": "https://www.vmware.com/ca/products/workstation-player.html",
+    "version": "25H2-24995812",
+    "homepage": "https://www.vmware.com/",
     "description": "An application for creating and running virtual machines on your computer.",
-    "license": {
-        "identifier": "Freeware",
-        "url": "https://www.vmware.com/ca/help/legal.html"
-    },
+    "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://softwareupdate.vmware.com/cds/vmw-desktop/ws/17.6.0/24238078/windows/core/VMware-workstation-17.6.0-24238078.exe.tar",
-            "hash": "8866101cd4d411dc4f75ecba2458b95ad5ca4edd177e2a500a9d3662ea37fc50"
+            "url": "https://cdn.winapps.cc/software/win/VMware-Workstation-Full-25H2-24995812.7z",
+            "hash": "6B25B3C14525C7DA1EC76BFDCA4A855C389F07E5D404BCB6041D4FD09613DC9A"
         }
     },
     "pre_install": [
@@ -27,17 +24,5 @@
         "   Start-Sleep -Seconds 2",
         "   Write-Host \"Please restart your computer to uninstall $app properly\" -F 'Red'",
         "}"
-    ],
-    "checkver": {
-        "url": "https://vmware-player.en.uptodown.com/windows/download",
-        "regex": "VMware Workstation Pro\\s(?<version>[\\d.]+)\\sBuild\\s(?<build>[\\d]+)",
-        "replace": "${version}"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://softwareupdate.vmware.com/cds/vmw-desktop/ws/$version/$matchBuild/windows/core/VMware-workstation-$version-$matchBuild.exe.tar"
-            }
-        }
-    }
+    ]
 }

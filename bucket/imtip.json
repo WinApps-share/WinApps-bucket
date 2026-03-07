@@ -1,10 +1,10 @@
 {
-    "version": "7.2.01",
+    "version": "8.3",
     "description": "光标处提示输入法状态的小工具",
     "homepage": "https://imtip.aardio.com",
     "license": "MIT",
     "url": "https://imtip.aardio.com/update/ImTip.7z",
-    "hash": "d1069bdeb24e7d1d35e6d0d2d6d93dd686217e9d8b2b2faf3623544c992fe401",
+    "hash": "109a90f6c2ec9f6711fe5356ae1abfb9a3866bae43602ed6d6f66ecefc25f933",
     "shortcuts": [
         [
             "ImTip.exe",

@@ -1,0 +1,51 @@
+{
+    "version": "8.0.4",
+    "description": "Open-source reference management software to manage bibliographic data and related research materials.",
+    "homepage": "https://www.zotero.org/",
+    "license": "AGPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://download.zotero.org/client/release/8.0.4/Zotero-8.0.4_win-x64.zip",
+            "hash": "2ffcd202f85318ffb6bc6dfa6ad8146cb33b72ea7ae1897aabbc53fc69ba046b"
+        },
+        "32bit": {
+            "url": "https://download.zotero.org/client/release/8.0.4/Zotero-8.0.4_win32.zip",
+            "hash": "4c7bbe8ab0eee0b6023c85abfd949bd5782f12f2714438b37e941c9cb95b5878"
+        },
+        "arm64": {
+            "url": "https://download.zotero.org/client/release/8.0.4/Zotero-8.0.4_win-arm64.zip",
+            "hash": "9e8a5fc898502006657a71b610eab7456bfdf786f7ee64cdc20d2a974605b458"
+        }
+    },
+    "pre_install": [
+        "$subdir = Get-ChildItem -Path $dir -Directory | Select-Object -First 1",
+        "if ($subdir) { Move-Item -Path \"$($subdir.FullName)\\*\" -Destination $dir -Force }"
+    ],
+    "bin": "zotero.exe",
+    "shortcuts": [
+        [
+            "zotero.exe",
+            "Zotero"
+        ]
+    ],
+    "checkver": {
+        "script": [
+            "try { $detail = Invoke-WebRequest 'https://www.zotero.org/download/client/dl?channel=release&platform=win-x64' -MaximumRedirection 0 -ErrorAction Ignore } catch { $_.Exception.Response }",
+            "return $detail.Headers.Location"
+        ],
+        "regex": "Zotero-([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.zotero.org/client/release/$version/Zotero-$version_win-x64.zip"
+            },
+            "32bit": {
+                "url": "https://download.zotero.org/client/release/$version/Zotero-$version_win32.zip"
+            },
+            "arm64": {
+                "url": "https://download.zotero.org/client/release/$version/Zotero-$version_win-arm64.zip"
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "version": "31.0.2",
+    "version": "32.0.4",
     "description": "Video recording and live streaming software",
     "homepage": "https://obsproject.com",
     "license": "GPL-2.0-only",
@@ -9,14 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/obsproject/obs-studio/releases/download/31.0.2/OBS-Studio-31.0.2-Windows-Installer.exe#/dl.7z",
-            "hash": "edb3f77c3ee4eae769924d1673bb826dac8898907d06f6f40a4c99b6bc8cdc8b",
-            "shortcuts": [
-                [
-                    "bin\\64bit\\obs64.exe",
-                    "OBS Studio"
-                ]
-            ]
+            "url": "https://github.com/obsproject/obs-studio/releases/download/32.0.4/OBS-Studio-32.0.4-Windows-x64-Installer.exe#/dl.7z",
+            "hash": "46a18bce8e2ff662b700c91d340a519376e712fe0af0d335536e4f9fd253f10a"
         }
     },
     "pre_install": "if (!(Test-Path \"$persist_dir\\portable_mode.txt\")) { New-Item \"$dir\\portable_mode.txt\" | Out-Null }",
@@ -30,18 +24,24 @@
         "Copy-Item \"$dir\\obs-plugins.original\\*\" \"$dir\\obs-plugins\" -Recurse -Force",
         "Remove-Item \"$dir\\obs-plugins.original\" -Recurse -Force"
     ],
+    "shortcuts": [
+        [
+            "bin\\64bit\\obs64.exe",
+            "OBS Studio"
+        ]
+    ],
     "checkver": {
         "github": "https://github.com/obsproject/obs-studio"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/obsproject/obs-studio/releases/download/$version/OBS-Studio-$version-Windows-Installer.exe#/dl.7z",
-                "hash": {
-                    "url": "https://github.com/obsproject/obs-studio/releases/tag/$version",
-                    "regex": "$basename:\\s$sha256"
-                }
+                "url": "https://github.com/obsproject/obs-studio/releases/download/$version/OBS-Studio-$version-Windows-x64-Installer.exe#/dl.7z"
             }
+        },
+        "hash": {
+            "url": "https://github.com/obsproject/obs-studio/releases/tag/$version",
+            "regex": "$basename:\\s$sha256"
         }
     }
 }

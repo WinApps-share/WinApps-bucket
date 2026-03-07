@@ -1,20 +1,16 @@
 {
-    "version": "2.1.2",
+    "version": "2.4.6",
     "description": "clash 客户端",
     "homepage": "https://github.com/clash-verge-rev/clash-verge-rev",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.1.2/Clash.Verge_2.1.2_x64-setup.exe#/dl.7z",
-            "hash": "4420902f80df7c5468b3e2f3111e707cd2ced1428a032df97735cd070b28bba5"
-        },
-        "32bit": {
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.1.2/Clash.Verge_2.1.2_x86_fixed_webview2-setup.exe#/dl.7z",
-            "hash": "81def519562de8cf3882f17bdb3644e102b25574be6b214be851679a2eb0368a"
+            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.6/Clash.Verge_2.4.6_x64-setup.exe#/dl.7z",
+            "hash": "f48d047c8cb244d67ddbe216bda80373cded71c40b1e55b040d95f0d178ee150"
         },
         "arm64": {
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.1.2/Clash.Verge_2.1.2_arm64-setup.exe#/dl.7z",
-            "hash": "01d052a38eb5b8136dfb90fc1baa6148fe71cfc1fe410ddae35bcc279a0f0a3d"
+            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.6/Clash.Verge_2.4.6_arm64-setup.exe#/dl.7z",
+            "hash": "9c42c4e52662790b0b536109e96b2fb0abffd0330d10942cec76b0f8a5487b5c"
         }
     },
     "shortcuts": [
@@ -28,9 +24,6 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v$version/Clash.Verge_$version_x64-setup.exe#/dl.7z"
-            },
-            "32bit": {
-                "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v$version/Clash.Verge_$version_x86_fixed_webview2-setup.exe#/dl.7z"
             },
             "arm64": {
                 "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v$version/Clash.Verge_$version_arm64-setup.exe#/dl.7z"

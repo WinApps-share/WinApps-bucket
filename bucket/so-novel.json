@@ -1,13 +1,13 @@
 {
-    "version": "1.7.10",
+    "version": "1.9.8",
     "description": "交互式书源下载器，支持 epub 导出",
-    "homepage": "https://github.com/pcdd-group/so-novel",
+    "homepage": "https://github.com/freeok/so-novel",
     "license": {
         "identifier": "Apache-2.0 license",
-        "url": "https://github.com/pcdd-group/so-novel#Apache-2.0-1-ov-file"
+        "url": "https://github.com/freeok/so-novel#Apache-2.0-1-ov-file"
     },
-    "url": "https://github.com/pcdd-group/so-novel/releases/download/v1.7.10/sonovel-windows.tar.gz",
-    "hash": "a8332593b2a58d0824ece2e6ccf58bcba786add8ce44532437cf66df28c584b4",
+    "url": "https://github.com/freeok/so-novel/releases/download/v1.9.8/sonovel-windows.tar.gz",
+    "hash": "1abcf6e811c70f6b529a0d4e6f17fd15aa508d14b6e440086c7b9b6b0b15d24d",
     "extract_dir": "SoNovel",
     "bin": "SoNovel.exe",
     "shortcuts": [
@@ -17,12 +17,8 @@
         ]
     ],
     "persist": "config.ini",
-    "checkver": {
-        "url": "https://api.github.com/repos/pcdd-group/so-novel/releases",
-        "jsonpath": "$[0].assets[*].browser_download_url",
-        "regex": "/releases/download/v([\\d.]+)/(?<file>sonovel-win.*?\\.tar.gz)"
-    },
+    "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/pcdd-group/so-novel/releases/download/v$version/$matchFile"
+        "url": "https://github.com/freeok/so-novel/releases/download/v$version/sonovel-windows.tar.gz"
     }
 }

@@ -1,0 +1,60 @@
+{
+    "version": "1.87.192",
+    "description": "Secure, Fast & Private Web Browser with Adblocker",
+    "homepage": "https://brave.com",
+    "license": {
+        "identifier": "Freeware,BSD-3-Clause,GPL-3.0-only,...",
+        "url": "https://github.com/brave/brave-browser/blob/master/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.87.192/BraveBrowserStandaloneSilentSetup.exe",
+            "hash": "3826c3f9dc82c3b6f01b8e73bd1a62cec9d88a9495080faa00b207d91c55a1b9"
+        },
+        "32bit": {
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.87.192/BraveBrowserStandaloneSilentSetup32.exe",
+            "hash": "bbe7b8fde43269817f115f4de9498f693297f8dc8df0102ab96ecf9be7b6c836"
+        },
+        "arm64": {
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.87.192/BraveBrowserStandaloneSilentSetupArm64.exe",
+            "hash": "2dba53af78079c2a46c1d73da7349c00d8d12e92d3923eddd84c2a529dc26dea"
+        }
+    },
+    "installer": {
+        "script": "Start-Process -FilePath \"$dir\\BraveBrowserStandaloneSilentSetup.exe\" -Wait"
+    },
+    "uninstaller": {
+        "script": [
+            "$uninstaller = Resolve-Path \"$env:LOCALAPPDATA\\BraveSoftware\\Brave-Browser\\Application\\*\\Installer\\setup.exe\" -ErrorAction SilentlyContinue",
+            "if ($uninstaller) {",
+            "    $uninstallString = \"`\"\" + $uninstaller.Path + \"`\" --uninstall\"",
+            "    cmd /c $uninstallString",
+            "    if ($LASTEXITCODE -ne 0) {",
+            "        Write-Host \"警告: 卸载可能未完全成功 (退出代码 $LASTEXITCODE)\"",
+            "    }",
+            "} else {",
+            "    Write-Host \"未找到 Brave 卸载程序，可能已被手动移除\"",
+            "}"
+        ]
+    },
+    "checkver": {
+        "url": "https://brave-browser-downloads.s3.brave.com/latest/release-windows-x64.version",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/brave/brave-browser/releases/download/v$version/BraveBrowserStandaloneSilentSetup.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/brave/brave-browser/releases/download/v$version/BraveBrowserStandaloneSilentSetup32.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/brave/brave-browser/releases/download/v$version/BraveBrowserStandaloneSilentSetupArm64.exe"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
