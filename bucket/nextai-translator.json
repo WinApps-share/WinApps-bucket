@@ -1,12 +1,12 @@
 {
-    "version": "0.6.27",
+    "version": "0.6.29",
     "description": "Browser extension and cross-platform desktop application for translation based on ChatGPT API",
     "homepage": "https://github.com/nextai-translator/nextai-translator",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nextai-translator/nextai-translator/releases/download/v0.6.27/NextAI.Translator_0.6.27_x64-setup.exe#/dl.7z",
-            "hash": "a23392d92271e4c9d1200eeec9ce5069f290a6b0dac47c6fbd64a722ec22c410"
+            "url": "https://github.com/nextai-translator/nextai-translator/releases/download/v0.6.29/NextAI.Translator_0.6.29_x64-setup.exe#/dl.7z",
+            "hash": "c61e65f168adf2163813ba7cebbaa9b05937cf18da088f7650dac47190b1778d"
         }
     },
     "shortcuts": [
