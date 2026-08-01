@@ -1,12 +1,12 @@
 {
-    "version": "2.2.10",
+    "version": "2.3.0",
     "description": "User friendly sideloader",
     "homepage": "https://github.com/nab138/iloader",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nab138/iloader/releases/download/v2.2.10/iloader-windows-x64.exe#/dl.7z",
-            "hash": "b1320420a8f1472ccb490efaa07827a78bf60c8cc6686d12c7717ec0ef7aa2ad"
+            "url": "https://github.com/nab138/iloader/releases/download/v2.3.0/iloader-windows-x64.exe#/dl.7z",
+            "hash": "01d6410bead69fadfed714f570316664718e2511df631ea472af38ed6e50535a"
         }
     },
     "installer": {
