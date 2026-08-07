@@ -1,5 +1,5 @@
 {
-    "version": "3.2.18",
+    "version": "3.2.20",
     "description": "Advanced API Debugging Proxy",
     "homepage": "https://reqable.com/",
     "license": {
@@ -12,8 +12,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/reqable/reqable-app/releases/download/3.2.18/reqable-app-windows-x86_64.zip",
-            "hash": "287f68878973b943e8b6e9e8969a581e4e2783bca4d2723b5e9f35676226b19b"
+            "url": "https://github.com/reqable/reqable-app/releases/download/3.2.20/reqable-app-windows-x86_64.zip",
+            "hash": "158d564662454101f7327d061ad5fda8aee225d2fa591d6df1fc114ed01958b0"
         }
     },
     "shortcuts": [
