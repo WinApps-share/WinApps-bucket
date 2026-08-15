@@ -1,0 +1,30 @@
+{
+    "version": "0.1.0",
+    "description": "DeepSeek Harness 第三方 Desktop",
+    "homepage": "https://github.com/anywhere-labs/deepseek-harness-desktop",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/anywhere-labs/deepseek-harness-desktop/releases/download/v0.1.0/DeepSeek-Harness-0.1.0.exe#/dl.7z",
+            "hash": "29b6043b1b9c63ff05954a79c21d630b8bc3066d153cefe07bc6abd4fde23839"
+        }
+    },
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+        "Remove-Item \"$dir\\`$*\", \"$dir\\*.nsi\" -Recurse"
+    ],
+    "shortcuts": [
+        [
+            "DeepSeek Harness.exe",
+            "DeepSeek Harness"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/anywhere-labs/deepseek-harness-desktop/releases/download/v$version/DeepSeek-Harness-$version.exe#/dl.7z"
+            }
+        }
+    }
+}
