@@ -1,6 +1,6 @@
 {
     "##": "Checkver URL https://docs.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel",
-    "version": "151.0.4129.86",
+    "version": "151.0.4129.93",
     "description": "Microsoft Edge. The chromium based Microsoft Edge browser.",
     "homepage": "https://www.microsoft.com/en-us/edge/business",
     "license": {
@@ -9,16 +9,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/0fb19a65-6cdd-467f-bce1-971519a15438/MicrosoftEdgeEnterpriseX64.msi",
-            "hash": "E59838EF165D6824DC077CFC0E0C58EFB9BF4929435960EE62835CD20E16AC59"
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/672dd164-4c25-42a8-b3d3-d7274d6c3d5c/MicrosoftEdgeEnterpriseX64.msi",
+            "hash": "346748BDE5C6CA71C15C7A800806C7899161B6E903C6B8AB069AFCDA38C5F41E"
         },
         "32bit": {
-            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/eccf6f3a-eacd-46bf-b622-97646fbb78f0/MicrosoftEdgeEnterpriseX86.msi",
-            "hash": "EA39AD42372B8C7641E71FC90FBB3FB543C29C0E277BB8D4A684B2079E4A5D2E"
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/2ab05e7b-314f-4b72-9c9b-4136add79b51/MicrosoftEdgeEnterpriseX86.msi",
+            "hash": "B7A8DAFC1E720186EF0321CF76630A4C9186B5AEE60DA6DFE9B6BFE40B2DB401"
         },
         "arm64": {
-            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/e9c9b6c7-2ef0-4675-915d-e8df9fe55e3e/MicrosoftEdgeEnterpriseARM64.msi",
-            "hash": "48D0C2BF9DAF760B1E2943AF60EB9D62827E7FE7A720A53C4C6EF69CB48317BD"
+            "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/5b94ceb0-f442-438b-b4f9-a17a63acca8b/MicrosoftEdgeEnterpriseARM64.msi",
+            "hash": "2A36BC0745286FE2368C6DCA36B30BA53A1AC2FBDA143BFA84DA750CB0CB847F"
         }
     },
     "installer": {
