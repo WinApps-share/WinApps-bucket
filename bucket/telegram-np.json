@@ -1,16 +1,16 @@
 {
-    "version": "7.1.0",
+    "version": "7.1.1",
     "description": "A messaging app with a focus on speed and security",
     "homepage": "https://telegram.org",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.1.0/tsetup-x64.7.1.0.exe",
-            "hash": "07d8b90f04889ad1f05b9ea65146a48244e59ca82932d548a72b749d3cc803ef"
+            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.1.1/tsetup-x64.7.1.1.exe",
+            "hash": "a051010c3ebe29ce07d77129e4764d09e72d65dfb6a1e834fe7c9128ea208a96"
         },
         "32bit": {
-            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.1.0/tsetup.7.1.0.exe",
-            "hash": "d9428e64db387208f2eb556de88ae1aa469f80a0ae3e5b1da829374b5da31083"
+            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v7.1.1/tsetup.7.1.1.exe",
+            "hash": "3a4599f00ac8e1789b51325dfd84eba779fe02690b39703b3de37bf1cb683757"
         }
     },
     "innosetup": true,
