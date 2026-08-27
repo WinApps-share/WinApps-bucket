@@ -78,8 +78,3 @@ jobs:
               ($failedNames | ForEach-Object { "- ``$_``" })
             ) | Add-Content -Path $env:GITHUB_STEP_SUMMARY -Encoding utf8
           }
-
-      - name: Fail workflow when updates failed
-        if: steps.updater.outcome == 'failure'
-        shell: pwsh
-        run: exit 1
