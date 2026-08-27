@@ -12,10 +12,10 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: Checkout Excavator action
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         repository: ScoopInstaller/GithubActions
         ref: main

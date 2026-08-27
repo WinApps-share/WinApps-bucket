@@ -110,7 +110,7 @@ try {
             [void]$updatedNames.Add($name)
         }
         catch {
-            Write-Host "::error title=$name 提交失败::$($_.Exception.Message)"
+            Write-Host "::warning title=$name 提交失败::$($_.Exception.Message)"
             [void]$failedNames.Add($name)
             git -C $root restore --staged --worktree -- "bucket/$name.json"
         }
@@ -141,7 +141,9 @@ try {
             throw 'git push failed'
         }
     }
-    if ($failedNames.Count -gt 0 -or $checkExitCode -ne 0) {
+    # Individual manifest failures are reported in the summary but do not fail
+    # the step. Only a fatal checkver/setup/push failure returns a non-zero code.
+    if ($checkExitCode -ne 0) {
         $exitCode = 1
     }
 }

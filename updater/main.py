@@ -108,7 +108,7 @@ def main():
                     }
                 )
             except Exception as error:
-                print(f"::error title={name} 更新失败::{error}")
+                print(f"::warning title={name} 更新失败::{error}")
                 try:
                     restore_paths(name)
                 except Exception as restore_error:
@@ -158,8 +158,7 @@ def main():
     print(f"检查 {len(app_results)} 个，成功 {succeeded} 个，失败 {len(failed_names)} 个")
     if failed_names:
         print(f"失败项目: {', '.join(failed_names)}")
-        return 1
-    return 0
+    return 1 if any(item.get("global") for item in results if item["status"] == "failed") else 0
 
 
 if __name__ == "__main__":
