@@ -4,14 +4,71 @@ on:
     # run every 4 hours
     - cron: '20 */4 * * *'
 name: Excavator
+permissions:
+  contents: write
 jobs:
   excavate:
     name: Excavate
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@main
+    - name: Checkout repository
+      uses: actions/checkout@v6
+
+    - name: Checkout Excavator action
+      uses: actions/checkout@v6
+      with:
+        repository: ScoopInstaller/GithubActions
+        ref: main
+        path: .github-actions/scoop
+
     - name: Excavate
-      uses: ScoopInstaller/GithubActions@main
+      id: excavator
+      continue-on-error: true
+      shell: pwsh
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SKIP_UPDATED: '1'
+      run: >-
+        ./bin/run-excavator.ps1
+        -ActionPath "${{ github.workspace }}/.github-actions/scoop"
+        -ReportPath "${{ runner.temp }}/excavator-summary.json"
+
+    - name: Write update summary
+      if: always()
+      shell: pwsh
+      run: |
+        $reportPath = "${{ runner.temp }}/excavator-summary.json"
+        if (-not (Test-Path $reportPath)) {
+          @(
+            '## Excavator 更新汇总'
+            ''
+            '> Excavator 未能生成统计报告，请查看运行日志。'
+          ) | Add-Content -Path $env:GITHUB_STEP_SUMMARY -Encoding utf8
+          exit 0
+        }
+
+        $report = Get-Content $reportPath -Raw | ConvertFrom-Json
+        @(
+          '## Excavator 更新汇总'
+          ''
+          '| 指标 | 数量 |'
+          '| --- | ---: |'
+          "| 检查 | $($report.checked) |"
+          "| 成功 | $($report.succeeded) |"
+          "| 实际更新 | $($report.updated) |"
+          "| 无需更新 | $($report.unchanged) |"
+          "| 失败 | $($report.failed) |"
+        ) | Add-Content -Path $env:GITHUB_STEP_SUMMARY -Encoding utf8
+
+        $failedNames = @(
+          $report.results |
+            Where-Object { $_.status -eq 'failed' } |
+            ForEach-Object { $_.name }
+        )
+        if ($failedNames.Count -gt 0) {
+          @(
+            ''
+            "### 失败项目 ($($failedNames.Count))"
+            ''
+            ($failedNames | ForEach-Object { "- ``$_``" })
+          ) | Add-Content -Path $env:GITHUB_STEP_SUMMARY -Encoding utf8
+        }
