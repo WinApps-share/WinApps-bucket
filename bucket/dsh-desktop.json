@@ -1,12 +1,12 @@
 {
-    "version": "2.0.5",
+    "version": "2.0.7",
     "description": "DeepSeek Harness 第三方 Desktop",
     "homepage": "https://github.com/anywhere-labs/deepseek-harness-desktop",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/anywhere-labs/deepseek-harness-desktop/releases/download/v2.0.5/DSH-Desktop-2.0.5-x64-Setup.exe#/dl.7z",
-            "hash": "777cb50c86b06d194b3029afebe9d06c9306ac521b82334c88cd4f1a0104220d"
+            "url": "https://github.com/anywhere-labs/deepseek-harness-desktop/releases/download/v2.0.7/DSH-Desktop-2.0.7-x64-Setup.exe#/dl.7z",
+            "hash": "dcc7bb77d84ece7bc0717a0a9c2ef7565d5c6a9475b517aacc2113b6ef2445fa"
         }
     },
     "pre_install": [
