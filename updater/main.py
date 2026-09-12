@@ -10,6 +10,15 @@ BASE_DIR = Path(__file__).resolve().parent
 ROOT_DIR = BASE_DIR.parent
 
 
+def configure_utf8_output():
+    """Keep GitHub Actions logs writable on Windows' non-UTF-8 consoles."""
+    os.environ["PYTHONIOENCODING"] = "utf-8"
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if reconfigure:
+            reconfigure(encoding="utf-8", errors="backslashreplace")
+
+
 def run(command):
     return subprocess.run(command, cwd=ROOT_DIR, check=True)
 
@@ -75,6 +84,8 @@ def write_report(report_path, results):
 
 
 def main():
+    configure_utf8_output()
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--report", help="将更新结果写入指定的 JSON 文件")
     args = parser.parse_args()
