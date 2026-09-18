@@ -2,10 +2,10 @@
     "homepage": "https://www.capcut.com/",
     "description": "All-in-one video editing application produced by ByteDance",
     "license": "Proprietary",
-    "version": "9.4.0.4015",
-    "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_4_0_4015_capcutpc_0_creatortool.exe#/capcut.7z",
-    "hash": "md5:273370229c82863bc64ab1b6839c8186",
-    "extract_dir": "JYPacket/9.4.0.4015",
+    "version": "9.5.0.4050",
+    "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_5_0_4050_capcutpc_0_creatortool.exe#/capcut.7z",
+    "hash": "md5:37889d0f290ab9fbe51f0e5073c791d5",
+    "extract_dir": "JYPacket/9.5.0.4050",
     "shortcuts": [
         [
             "CapCut.exe",
