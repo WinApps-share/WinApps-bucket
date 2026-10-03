@@ -1,0 +1,43 @@
+{
+    "version": "0.6.32",
+    "description": "Lightweight, cross-platform database client",
+    "homepage": "https://dbxio.com",
+    "license": "Apache-2.0",
+    "suggest": {
+        "DBX MCP Server": "versions/dbx-mcp",
+        "DBX CLI": "versions/dbx-cli"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/t8y2/dbx/releases/download/v0.6.32/DBX_0.6.32_x64-portable.zip",
+            "hash": "8dfe3e86ca1477774c7a81d9c59e781ab616aa02d6681a742d39db245dbf084f"
+        },
+        "arm64": {
+            "url": "https://github.com/t8y2/dbx/releases/download/v0.6.32/DBX_0.6.32_arm64-portable.zip",
+            "hash": "1766b7fd80bb292daa448cf7fe7ec913a9cabeda378a0db1768385cb95bdd84a"
+        }
+    },
+    "shortcuts": [
+        [
+            "DBX.exe",
+            "DBX"
+        ]
+    ],
+    "env_set": {
+        "DBX_DATA_DIR": "$dir\\data"
+    },
+    "persist": "data",
+    "checkver": {
+        "github": "https://github.com/t8y2/dbx"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/t8y2/dbx/releases/download/v$version/DBX_$version_x64-portable.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/t8y2/dbx/releases/download/v$version/DBX_$version_arm64-portable.zip"
+            }
+        }
+    }
+}
