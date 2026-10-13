@@ -1,16 +1,16 @@
 {
-    "version": "3.5.0",
+    "version": "3.6.0",
     "description": "PicList是一款高效的云存储和图床平台管理工具，在PicGo的基础上经过深度的二次开发，不仅完整保留了PicGo的所有功能，还增添了许多新的feature",
     "homepage": "https://github.com/Kuingsmile/PicList",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Kuingsmile/PicList/releases/download/v3.5.0/PicList-Setup-3.5.0-x64-portable.zip",
-            "hash": "215e8eabc21a02745660e37eb47cff8b31158379382447983acf7e533f97bebc"
+            "url": "https://github.com/Kuingsmile/PicList/releases/download/v3.6.0/PicList-Setup-3.6.0-x64-portable.zip",
+            "hash": "f92630a50e7d43bfd3ea5abf03667975349cbdc425bf69d68c08bdb0224dddcc"
         },
         "arm64": {
-            "url": "https://github.com/Kuingsmile/PicList/releases/download/v3.5.0/PicList-Setup-3.5.0-arm64-portable.zip",
-            "hash": "27bf006d9fa9958e8e5fe6401c6f25c9e3dfdf1971cea00e311c6a604a498626"
+            "url": "https://github.com/Kuingsmile/PicList/releases/download/v3.6.0/PicList-Setup-3.6.0-arm64-portable.zip",
+            "hash": "adc57942916883568d80a0e3749829130f720f0c6630ec23c1d5183ef0303e24"
         }
     },
     "shortcuts": [
