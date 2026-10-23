@@ -1,20 +1,20 @@
 {
-    "version": "0.14.0",
+    "version": "0.15.1",
     "description": "Image editing; an open-source, clean-room reimplementation of Adobe Photoshop, rebuilt in pure Rust",
     "homepage": "https://getartcraft.com/apps/photocraft",
     "license": "MIT|Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-windows-x64.msi",
-            "hash": "a25a2a15c85dd0563f817e206da125ef594a7c8020f34301c1ff67767b2b8d6f"
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-windows-x64.msi",
+            "hash": "2c4ec56914981135531fedfc28ce793bdb2e23caaa66ce174f7900dd766362f5"
         },
         "32bit": {
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-windows-x86.msi",
-            "hash": "d7db4c7c1bf677880743092b665c46d165c0b718ed60feb14093e298c10af508"
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-windows-x86.msi",
+            "hash": "758b5a67f308cfc617d14cca371f0421754abc31dc10e62527de49b54d750d7d"
         },
         "arm64": {
-            "url": "https://github.com/storytold/photocraft/releases/download/v0.14.0/photocraft-0.14.0-windows-arm64.msi",
-            "hash": "c429b8f12c4b980dc3f93f3d36b1c1177ff7899225b0417107b9dd96c7510349"
+            "url": "https://github.com/storytold/photocraft/releases/download/v0.15.1/photocraft-0.15.1-windows-arm64.msi",
+            "hash": "dede26ccef5c94194055189ca3f0183b77b17df8fbbc978d068e5d8f81a17961"
         }
     },
     "extract_dir": "PFiles64\\PhotoCraft",
