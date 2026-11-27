@@ -1,5 +1,5 @@
 {
-    "version": "11.35.0",
+    "version": "11.36.0",
     "homepage": "https://tools.pdf24.org/en/creator",
     "description": "Free and easy to use PDF software with several functions",
     "license": {
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download.pdf24.org/pdf24-creator-11.35.0-x64.msi#/setup.msi_",
-            "hash": "d4cf3207764e275766bbdf9ab0599330e3dc25297be6bdf662f8381942bc14b2"
+            "url": "https://download.pdf24.org/pdf24-creator-11.36.0-x64.msi#/setup.msi_",
+            "hash": "dda88091641ffad60048caeb1f7582bbd63b6233064b95d390de1e99d9f56056"
         },
         "32bit": {
-            "url": "https://download.pdf24.org/pdf24-creator-11.35.0-x86.msi#/setup.msi_",
-            "hash": "e8f6e0392ca7530bc506e629dce45ae275bbaadf9a88ba0a93bf9db12fa36cca"
+            "url": "https://download.pdf24.org/pdf24-creator-11.36.0-x86.msi#/setup.msi_",
+            "hash": "bbfc0ca34a45d5ef6ac807128e6f734091ceb0fe56e1fadf4e92d1ee57a43c0e"
         },
         "arm64": {
-            "url": "https://download.pdf24.org/pdf24-creator-11.35.0-arm64.msi#/setup.msi_",
-            "hash": "7a875f45c876d41f3c6168682c66afbdcfda1338fedafd9ba962eedbc001ef85"
+            "url": "https://download.pdf24.org/pdf24-creator-11.36.0-arm64.msi#/setup.msi_",
+            "hash": "b7554dd901ee59dc9bf1e6838518fdc9b04bb130f47694f43bcceaa7140de801"
         }
     },
     "post_install": [
