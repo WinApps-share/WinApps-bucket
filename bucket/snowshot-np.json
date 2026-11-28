@@ -1,16 +1,16 @@
 {
-    "version": "1.6.6",
+    "version": "1.6.7",
     "description": "SnowShot 是一款功能强大的截图工具，集成了文字识别、翻译和 AI 对话等功能",
     "homepage": "https://github.com/mg-chao/snow-shot",
     "license": "Apache-2.0|GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mg-chao/snow-apps/releases/download/v1.6.6_snow-shot/snow-shot-1.6.6-windows-x64-offline.exe#/dl.7z",
-            "hash": "db16fe93809e439e9947429788e6ed0aaa35a52ebb90262e93ddcbd2c9876377"
+            "url": "https://github.com/mg-chao/snow-apps/releases/download/v1.6.7_snow-shot/snow-shot-1.6.7-windows-x64-offline.exe#/dl.7z",
+            "hash": "d88f63de1b369be5beca24cb1d60853166488db762317d9a29c87193ba2bc8c2"
         },
         "arm64": {
-            "url": "https://github.com/mg-chao/snow-apps/releases/download/v1.6.6_snow-shot/snow-shot-1.6.6-windows-arm64-offline.exe#/dl.7z",
-            "hash": "11b01bc0c1a86b208aee2f7c5a4aa363c45a0ba5bc9bae82e4830642438f2b10"
+            "url": "https://github.com/mg-chao/snow-apps/releases/download/v1.6.7_snow-shot/snow-shot-1.6.7-windows-arm64-offline.exe#/dl.7z",
+            "hash": "d25927dcd32b14ef8ee4f59c5ab432ec329ed54bdd88d921a1681d788af3fb8a"
         }
     },
     "shortcuts": [
